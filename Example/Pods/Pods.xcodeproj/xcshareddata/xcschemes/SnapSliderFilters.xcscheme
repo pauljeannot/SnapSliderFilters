@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9D6B9DD66F00D42A55885ED7'
+               BlueprintIdentifier = '935DBEDE710E52B55AE937AF'
                BlueprintName = 'SnapSliderFilters'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SnapSliderFilters.framework'>

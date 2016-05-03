@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "SnapSliderFilters"
   s.version          = "0.1.0"
-  s.summary          = "SnapSliderFilters allows you to create easily a SnapChat like navigation between a picture and its filters (automatically generated). You can add stickers above slides, tap on the screen to add a message and place it wherever you want, exactly as you do every day on SnapChat !"
+  s.summary          = "Snapchat like filters, slider, stickers and textfield ! "
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+SnapSliderFilters allows you to create easily a SnapChat like navigation between a picture and its filters (automatically generated). You can add stickers above slides, tap on the screen to add a message and place it wherever you want, exactly as you do every day on SnapChat !
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SnapSliderFilters"
+  s.homepage         = "https://github.com/pauljeannot/SnapSliderFilters"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Paul Jeannot" => "paul.jeannot@etu.utc.fr" }
