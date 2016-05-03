@@ -1,0 +1,14 @@
+PODS:
+  - SnapSliderFilters (0.1.0)
+
+DEPENDENCIES:
+  - SnapSliderFilters (from `../`)
+
+EXTERNAL SOURCES:
+  SnapSliderFilters:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SnapSliderFilters: 23793b0fe3f91ec6051405c14a7ce38bd3ecc7db
+
+COCOAPODS: 0.39.0

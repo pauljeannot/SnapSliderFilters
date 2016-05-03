@@ -1,0 +1,6 @@
+framework module Pods_SnapSliderFilters_Example {
+  umbrella header "Pods-SnapSliderFilters_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

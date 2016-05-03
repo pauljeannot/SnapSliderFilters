@@ -1,0 +1,6 @@
+framework module SnapSliderFilters {
+  umbrella header "SnapSliderFilters-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "SnapSliderFilters",
+  "version": "0.1.0",
+  "summary": "A short description of SnapSliderFilters.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SnapSliderFilters",
+  "license": "MIT",
+  "authors": {
+    "Paul Jeannot": "paul.jeannot@etu.utc.fr"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SnapSliderFilters.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SnapSliderFilters/Classes/**/*"
+}
