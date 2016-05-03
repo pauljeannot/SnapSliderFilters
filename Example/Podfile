@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SnapSliderFilters_Example', :exclusive => true do
+  pod 'SnapSliderFilters', :path => '../'
+end
+
+target 'SnapSliderFilters_Tests', :exclusive => true do
+  pod 'SnapSliderFilters', :path => '../'
+
+  
+end
