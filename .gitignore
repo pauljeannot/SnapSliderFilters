@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # OS X
 .DS_Store
 
 # Xcode
 build/
 =======
+=======
+>>>>>>> 498af114e0551f9de239313925984e4330436c8f
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -14,7 +17,10 @@ build/
 DerivedData
 
 ## Various settings
+<<<<<<< HEAD
 >>>>>>> 3c00520ede06493dc15760843069e426cd8015e8
+=======
+>>>>>>> 498af114e0551f9de239313925984e4330436c8f
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -24,6 +30,7 @@ DerivedData
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+<<<<<<< HEAD
 <<<<<<< HEAD
 *.xccheckout
 profile
@@ -45,6 +52,8 @@ Carthage
 #
 # Pods/
 =======
+=======
+>>>>>>> 498af114e0551f9de239313925984e4330436c8f
 
 ## Other
 *.xccheckout
@@ -90,4 +99,7 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
+<<<<<<< HEAD
 >>>>>>> 3c00520ede06493dc15760843069e426cd8015e8
+=======
+>>>>>>> 498af114e0551f9de239313925984e4330436c8f
