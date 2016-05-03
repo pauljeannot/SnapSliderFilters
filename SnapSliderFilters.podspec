@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "SnapSliderFilters"
   s.version          = "0.1.0"
-  s.summary          = "SnapSliderFilters allow you to create easily a SnapChat like navigation between a picture and its filters (automatically generated). You can add stickers above slides, tap on the screen to add a message and place it where you want, exactly as you do every day on SnapChat !"
+  s.summary          = "SnapSliderFilters allows you to create easily a SnapChat like navigation between a picture and its filters (automatically generated). You can add stickers above slides, tap on the screen to add a message and place it where you want, exactly as you do every day on SnapChat !"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
