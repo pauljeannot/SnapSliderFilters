@@ -1,6 +1,5 @@
 # SnapSliderFilters
 
-[![CI Status](http://img.shields.io/travis/Paul Jeannot/SnapSliderFilters.svg?style=flat)](https://travis-ci.org/Paul Jeannot/SnapSliderFilters)
 [![Version](https://img.shields.io/cocoapods/v/SnapSliderFilters.svg?style=flat)](http://cocoapods.org/pods/SnapSliderFilters)
 [![License](https://img.shields.io/cocoapods/l/SnapSliderFilters.svg?style=flat)](http://cocoapods.org/pods/SnapSliderFilters)
 [![Platform](https://img.shields.io/cocoapods/p/SnapSliderFilters.svg?style=flat)](http://cocoapods.org/pods/SnapSliderFilters)
@@ -8,6 +7,10 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+[![Gif](https://media.giphy.com/media/l0K4a2gNdOxrMH3Tq/giphy.gif)](Gif)
+[![Gif](https://media.giphy.com/media/26FxxUyEKHtLQHwrK/giphy.gif)](Gif)
+
 
 ## Requirements
 
