@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnapSliderFilters"
-  s.version          = "1.0"
+  s.version          = "1.0.1"
   s.summary          = "Snapchat like filters, slider, stickers and textfield ! "
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ SnapSliderFilters allows you to create easily a SnapChat like navigation between
   s.source           = { :git => "https://github.com/pauljeannot/SnapSliderFilters.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'SnapSliderFilters/Classes/**/*'
   
