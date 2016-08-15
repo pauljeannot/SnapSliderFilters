@@ -55,33 +55,33 @@ var data:[SNFilter] = SNFilter.generateFilters(originalPicture, filters: SNFilte
 
 You can add some stickers above your filters, by creating an `SNSticker` and adding it to the proper filter :
 ```swift
-  var sticker:SNSticker = SNSticker(frame: CGRect(x: 20, y: 0, width: 140, height: 140), image: UIImage(named: "stick")!)
-  // In case of overlapping, you can provide a zPosition (the default one is 0)
-  var sticker2:SNSticker = SNSticker(frame: CGRect(x: 30, y: 0, width: 140, height: 140), image: UIImage(named: "stick")!, atZPosition: 2))
-  
-  self.data[1].addSticker(sticker)
-  self.data[1].addSticker(sticker2)
+var sticker:SNSticker = SNSticker(frame: CGRect(x: 20, y: 0, width: 140, height: 140), image: UIImage(named: "stick")!)
+// In case of overlapping, you can provide a zPosition (the default one is 0)
+var sticker2:SNSticker = SNSticker(frame: CGRect(x: 30, y: 0, width: 140, height: 140), image: UIImage(named: "stick")!, atZPosition: 2))
+
+self.data[1].addSticker(sticker)
+self.data[1].addSticker(sticker2)
 ```
 
 Your ViewController must conform to the `SNSliderDataSource` protocol. It allows the slider to be populated with your own data.
 
 ```swift
 extension ViewController: SNSliderDataSource {
-    
-    // The number of SNFilters that you want in the slider
-    func numberOfSlides(slider: SNSlider) -> Int {
-        return data.count
-    }
-    
-    // For a given index, you return the corresponding SNFilter
-    func slider(slider: SNSlider, slideAtIndex index: Int) -> SNFilter {
-        return data[index]
-    }
-    
-    // The starting index of the slider
-    func startAtIndex(slider: SNSlider) -> Int {
-        return 0
-    }
+
+// The number of SNFilters that you want in the slider
+func numberOfSlides(slider: SNSlider) -> Int {
+return data.count
+}
+
+// For a given index, you return the corresponding SNFilter
+func slider(slider: SNSlider, slideAtIndex index: Int) -> SNFilter {
+return data[index]
+}
+
+// The starting index of the slider
+func startAtIndex(slider: SNSlider) -> Int {
+return 0
+}
 }
 ```
 
@@ -123,20 +123,20 @@ You ViewController must conform to the `UIGestureRecognizerDelegate`, so add thi
 
 ```swift 
 extension ViewController: UIGestureRecognizerDelegate {
-    
-    internal func handleTap(sender: UITapGestureRecognizer? = nil) {
-        self.textField?.handleTap()
-    }
+
+internal func handleTap(sender: UITapGestureRecognizer? = nil) {
+self.textField?.handleTap()
+}
 }
 ```
 
-Finally, do not forget to remove observers when your view will disappear :
+Finally, do not forget to remove observers :
 ```swift
-    override func viewWillDisappear(animated: Bool) {
-        if let textField = self.textField {
-            NSNotificationCenter.defaultCenter().removeObserver(textField)
-        }
-    }
+override func viewWillDisappear(animated: Bool) {
+if let textField = self.textField {
+NSNotificationCenter.defaultCenter().removeObserver(textField)
+}
+}
 ```
 
 ## Author

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnapSliderFilters"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "Snapchat like filters, slider, stickers and textfield ! "
 
 # This description is used to generate tags and improve search results.

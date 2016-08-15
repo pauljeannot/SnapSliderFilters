@@ -101,7 +101,7 @@ public class SNFilter: UIImageView {
         let syncQueue = dispatch_queue_create("com.snapsliderfilters.app", qos_attr)
         
         dispatch_apply(filters.count, queue) { iteration in
-            var filterComputed = originalImage.applyFilter(filterNamed: filters[iteration])
+            let filterComputed = originalImage.applyFilter(filterNamed: filters[iteration])
             dispatch_sync(syncQueue) {
                 finalFilters.append(filterComputed)
                 return
