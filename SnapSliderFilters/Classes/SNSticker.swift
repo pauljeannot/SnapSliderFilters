@@ -10,13 +10,13 @@ import UIKit
 
 public class SNSticker: UIImageView {
     
-    public init(frame: CGRect, image:UIImage, withContentMode mode: UIViewContentMode = .ScaleAspectFit, atZPosition zIndex:Int? = nil) {
+    public init(frame: CGRect, image:UIImage, withContentMode mode: UIViewContentMode = .ScaleAspectFit, atZPosition zIndex:CGFloat? = nil) {
         super.init(frame: frame)
         self.contentMode = mode
         self.clipsToBounds = true
         self.image = image
-        if let i = zIndex {
-            self.layer.zPosition = CGFloat(i)
+        if let index = zIndex {
+            self.layer.zPosition = index
         }
         else {
             self.layer.zPosition = 0
@@ -26,7 +26,6 @@ public class SNSticker: UIImageView {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 extension SNSticker: NSCopying {

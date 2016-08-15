@@ -1,1683 +1,699 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0028C0622072378264CC98318A4223DB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>03502462C3E48CD57696B2914A53E79F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>03502462C3E48CD57696B2914A53E79F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>04BE797FBD622509E411577E809A3B95</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FBF53C17F77D6FBE435A9369A008E53F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0E4DB8475C8819432A1C815283E4E52F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>15FAD128A909873BBCB8872BB9098A9A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E18CE723F7B6CD734F65AA4D54344A6D</string>
-				<string>39414DED5C8BB5D7F86B0F9F6DF8EAFC</string>
-				<string>6800ADB1057EBF323064B3BEC2DAF4FA</string>
-				<string>1E1F8F54B94EE51186E79EC6A2B27E05</string>
-				<string>C8E65C165B8158CB89A4FEE4B5184C60</string>
-				<string>86F669E3AFF0E97365B23CDE1938492D</string>
-				<string>C3B38F0CD89DF84F1392653C40C08DBD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>16B8ABD0532C88D8BE6E5E841792FDFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8E80757AEAF0620F282052314BC5156A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>184D07FF9E9B4FAC2286ADE2EAFF4985</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E1F8F54B94EE51186E79EC6A2B27E05</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C08965B8D111F2DC8C34B13965A98EE7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1F3FDF782886F3896275161381892DE5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>F185008818461081FD31A1F6C4416CBA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>59F76A37CBDDC28F3BFAD82F6192B122</string>
-				<string>0028C0622072378264CC98318A4223DB</string>
-				<string>909B7544E3E7DD00C89B4EC40F8DBED1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>4CA6C00F746E44E78BB164F58A85A7F2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-SnapSliderFilters_Tests</string>
-			<key>productName</key>
-			<string>Pods-SnapSliderFilters_Tests</string>
-			<key>productReference</key>
-			<string>863062518D4412996AC9C8FAF699E5E6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>22BE32C2F2600859C44D55B5AE285CBB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2685F79F41F613A17E6568C750C8E40D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C684633D55DDE2FF7F45F981B9CBDB5C</string>
-				<string>2E56B83F147EA68115A100B08F62665A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>27570033427625549D07502D7B770CE9</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>7CC7E80C1B27CC4BA08C07AB237964B6</string>
-			<key>remoteInfo</key>
-			<string>SnapSliderFilters</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>552D02D5BA751AC2E8790D2811D496CA</string>
-				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2E56B83F147EA68115A100B08F62665A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>544C6CB47B48E9598CE2B936A5A45926</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Example/Pods-SnapSliderFilters_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_SnapSliderFilters_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2EB00D2D4ACD01B1A7980A79DD9D68A2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3608A6482718ED15276C590A18AF5517</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>371DD59D524D1E66EA8EB64BB473CA38</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37A52DB86D0551A1C654818A44D21432</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79397985D5948D03E818B6E2E76ABF55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>37B12E1D1F65F6EB6239F12E91919137</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SNTextField.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>39414DED5C8BB5D7F86B0F9F6DF8EAFC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5C01067FCBF6D750F29C877DC5D1631C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3D5718663B69C72DF115F414FD054567</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>47BD28D3C18896525208F13CDD7E43F1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SnapSliderFilters/SnapSliderFilters-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SnapSliderFilters/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SnapSliderFilters/SnapSliderFilters.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>SnapSliderFilters</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>447DA05572A81CF453FCA8DE85AA2070</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5A81F4AA8DE7305BC6B51A9DC4731941</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SnapSliderFilters</string>
-			<key>path</key>
-			<string>SnapSliderFilters</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46B77637576DD533CC836A1C8D9B6222</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>47BD28D3C18896525208F13CDD7E43F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SnapSliderFilters.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4C8FFF7154916914E2EB04872C9F7F98</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CED890C5D2DED2F630744CBE8D193F02</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4CA6C00F746E44E78BB164F58A85A7F2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SnapSliderFilters</string>
-			<key>target</key>
-			<string>7CC7E80C1B27CC4BA08C07AB237964B6</string>
-			<key>targetProxy</key>
-			<string>7A9794A1475618DDFB179FE68228AD18</string>
-		</dict>
-		<key>4F2CC6ED1FFA0D7CB94F181D3398FE8B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>184D07FF9E9B4FAC2286ADE2EAFF4985</string>
-				<string>ECE9BBEDEC3B3F3502BF24761840C719</string>
-				<string>47BD28D3C18896525208F13CDD7E43F1</string>
-				<string>700AA7703D155D7F375D934D1AACA3BB</string>
-				<string>9D1014BD4938F573AFF60647B8E192A1</string>
-				<string>8E80757AEAF0620F282052314BC5156A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/SnapSliderFilters</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5156FAF0B2ACFD7E48AB85EF47AA8ADD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>2685F79F41F613A17E6568C750C8E40D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B06D5EFDC361679E61EE575A77DA2703</string>
-				<string>37A52DB86D0551A1C654818A44D21432</string>
-				<string>A97E9E33D491A3F4C4EB7A3630391D53</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A55DEF994889F6EF0240002CA2D0CDFB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-SnapSliderFilters_Example</string>
-			<key>productName</key>
-			<string>Pods-SnapSliderFilters_Example</string>
-			<key>productReference</key>
-			<string>97CBE8D234C4940006E8DEB35A17CADE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>518D5D0132D4612C5D25BCCF3364C668</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>97CBE8D234C4940006E8DEB35A17CADE</string>
-				<string>863062518D4412996AC9C8FAF699E5E6</string>
-				<string>BB3A143EC915B31EC2217B0E6D1158C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>51F2E2BE0CF69D7E6CCFBAE6B5F8417E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3D5718663B69C72DF115F414FD054567</string>
-				<string>DD64515DEE980820AA36D72907CF7E80</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>52AB3D18585E6ED3465F0E416CC048E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SNSlider.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>544C6CB47B48E9598CE2B936A5A45926</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>552D02D5BA751AC2E8790D2811D496CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>59F76A37CBDDC28F3BFAD82F6192B122</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C7DCE3542F15BF21EC9BA245E5B918CE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5A81F4AA8DE7305BC6B51A9DC4731941</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5C01067FCBF6D750F29C877DC5D1631C</string>
-				<string>52AB3D18585E6ED3465F0E416CC048E9</string>
-				<string>C08965B8D111F2DC8C34B13965A98EE7</string>
-				<string>8E11E37E752062D581B439C0607DDAB8</string>
-				<string>37B12E1D1F65F6EB6239F12E91919137</string>
-				<string>AF618D3DD0E78C121413D6A8AFAA232B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C01067FCBF6D750F29C877DC5D1631C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SNFilter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5D7210CB97776B768C88851FB8929AF4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D01F69FD6D41A3FE1F069BA8A419242</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>5F083A453778F3DED02F355919A5EACB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81BFB0A30FE8ECEFEBA2FA2FEE62B773</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6800ADB1057EBF323064B3BEC2DAF4FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>52AB3D18585E6ED3465F0E416CC048E9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E6EBF5AAE717F87DB816D22CD99DE06</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>700AA7703D155D7F375D934D1AACA3BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SnapSliderFilters-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73D6C725F76A5956F5322EBC257C790A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>75007460066FC56B4FDB1EC19877CAAA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C628506923FD16E8319FBA3A3E23F852</string>
-				<string>371DD59D524D1E66EA8EB64BB473CA38</string>
-				<string>73D6C725F76A5956F5322EBC257C790A</string>
-				<string>E9670F85C5DB6C6E7A14BA45BD5EBFFF</string>
-				<string>D73A18948A2DB6408866053AE21FD5E6</string>
-				<string>FAF1152B0860AE0FF5E17BEEB8AE62DF</string>
-				<string>7911C15906C759665151F265269EDF5C</string>
-				<string>22BE32C2F2600859C44D55B5AE285CBB</string>
-				<string>0E4DB8475C8819432A1C815283E4E52F</string>
-				<string>3608A6482718ED15276C590A18AF5517</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SnapSliderFilters_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SnapSliderFilters_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7911C15906C759665151F265269EDF5C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79397985D5948D03E818B6E2E76ABF55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7A9794A1475618DDFB179FE68228AD18</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>7CC7E80C1B27CC4BA08C07AB237964B6</string>
-			<key>remoteInfo</key>
-			<string>SnapSliderFilters</string>
-		</dict>
-		<key>7CC7E80C1B27CC4BA08C07AB237964B6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>51F2E2BE0CF69D7E6CCFBAE6B5F8417E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>15FAD128A909873BBCB8872BB9098A9A</string>
-				<string>04BE797FBD622509E411577E809A3B95</string>
-				<string>AE7DF9BE369DE1C5F356A5F68DEAA500</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SnapSliderFilters</string>
-			<key>productName</key>
-			<string>SnapSliderFilters</string>
-			<key>productReference</key>
-			<string>BB3A143EC915B31EC2217B0E6D1158C7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>4C8FFF7154916914E2EB04872C9F7F98</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>518D5D0132D4612C5D25BCCF3364C668</string>
-				<string>9CD5791CD1086E9AB9DC5BE5CBA1AAFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81BFB0A30FE8ECEFEBA2FA2FEE62B773</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>863062518D4412996AC9C8FAF699E5E6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_SnapSliderFilters_Tests.framework</string>
-			<key>path</key>
-			<string>Pods_SnapSliderFilters_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8687D419D46093E5BD1DF352C9F3ACA4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>86F669E3AFF0E97365B23CDE1938492D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>37B12E1D1F65F6EB6239F12E91919137</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8E11E37E752062D581B439C0607DDAB8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SNSticker.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8E80757AEAF0620F282052314BC5156A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SnapSliderFilters-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>909B7544E3E7DD00C89B4EC40F8DBED1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9BF0F03A176C40301EDD4C4125365FDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>97CBE8D234C4940006E8DEB35A17CADE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_SnapSliderFilters_Example.framework</string>
-			<key>path</key>
-			<string>Pods_SnapSliderFilters_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9BF0F03A176C40301EDD4C4125365FDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>22BE32C2F2600859C44D55B5AE285CBB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9CD5791CD1086E9AB9DC5BE5CBA1AAFD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D9A4AFC63928BC17C88AA5334805770D</string>
-				<string>75007460066FC56B4FDB1EC19877CAAA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D01F69FD6D41A3FE1F069BA8A419242</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D1014BD4938F573AFF60647B8E192A1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SnapSliderFilters-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A55DEF994889F6EF0240002CA2D0CDFB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SnapSliderFilters</string>
-			<key>target</key>
-			<string>7CC7E80C1B27CC4BA08C07AB237964B6</string>
-			<key>targetProxy</key>
-			<string>27570033427625549D07502D7B770CE9</string>
-		</dict>
-		<key>A97E9E33D491A3F4C4EB7A3630391D53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5D7210CB97776B768C88851FB8929AF4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AE7DF9BE369DE1C5F356A5F68DEAA500</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>16B8ABD0532C88D8BE6E5E841792FDFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AF618D3DD0E78C121413D6A8AFAA232B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SNUtils.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B06D5EFDC361679E61EE575A77DA2703</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5F083A453778F3DED02F355919A5EACB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BB3A143EC915B31EC2217B0E6D1158C7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SnapSliderFilters.framework</string>
-			<key>path</key>
-			<string>SnapSliderFilters.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE4072B054A30B30590198B8989897AB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C08965B8D111F2DC8C34B13965A98EE7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SNSliderDataSource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3B38F0CD89DF84F1392653C40C08DBD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF618D3DD0E78C121413D6A8AFAA232B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C628506923FD16E8319FBA3A3E23F852</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C684633D55DDE2FF7F45F981B9CBDB5C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>46B77637576DD533CC836A1C8D9B6222</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Example/Pods-SnapSliderFilters_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_SnapSliderFilters_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C7DCE3542F15BF21EC9BA245E5B918CE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D73A18948A2DB6408866053AE21FD5E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C8E65C165B8158CB89A4FEE4B5184C60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8E11E37E752062D581B439C0607DDAB8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CE40D4C855EF1DE700701CD66BDCE493</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0E4DB8475C8819432A1C815283E4E52F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Tests/Pods-SnapSliderFilters_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_SnapSliderFilters_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CED890C5D2DED2F630744CBE8D193F02</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>447DA05572A81CF453FCA8DE85AA2070</string>
-				<string>4F2CC6ED1FFA0D7CB94F181D3398FE8B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SnapSliderFilters</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>518D5D0132D4612C5D25BCCF3364C668</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>5156FAF0B2ACFD7E48AB85EF47AA8ADD</string>
-				<string>1F3FDF782886F3896275161381892DE5</string>
-				<string>7CC7E80C1B27CC4BA08C07AB237964B6</string>
-			</array>
-		</dict>
-		<key>D73A18948A2DB6408866053AE21FD5E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D9A4AFC63928BC17C88AA5334805770D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ECC39F49907202009C3977B04539ECB4</string>
-				<string>6E6EBF5AAE717F87DB816D22CD99DE06</string>
-				<string>DBC95305A4F8A5D0B9274A46B9C5D43E</string>
-				<string>BE4072B054A30B30590198B8989897AB</string>
-				<string>81BFB0A30FE8ECEFEBA2FA2FEE62B773</string>
-				<string>8687D419D46093E5BD1DF352C9F3ACA4</string>
-				<string>2EB00D2D4ACD01B1A7980A79DD9D68A2</string>
-				<string>9D01F69FD6D41A3FE1F069BA8A419242</string>
-				<string>46B77637576DD533CC836A1C8D9B6222</string>
-				<string>544C6CB47B48E9598CE2B936A5A45926</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SnapSliderFilters_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SnapSliderFilters_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBC95305A4F8A5D0B9274A46B9C5D43E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD64515DEE980820AA36D72907CF7E80</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>47BD28D3C18896525208F13CDD7E43F1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SnapSliderFilters/SnapSliderFilters-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SnapSliderFilters/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SnapSliderFilters/SnapSliderFilters.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>SnapSliderFilters</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E18CE723F7B6CD734F65AA4D54344A6D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>700AA7703D155D7F375D934D1AACA3BB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E9670F85C5DB6C6E7A14BA45BD5EBFFF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ECC39F49907202009C3977B04539ECB4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ECE9BBEDEC3B3F3502BF24761840C719</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SnapSliderFilters.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F185008818461081FD31A1F6C4416CBA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CE40D4C855EF1DE700701CD66BDCE493</string>
-				<string>F5CC52AFCF9526CF41A7729DE7A3F962</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F5CC52AFCF9526CF41A7729DE7A3F962</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3608A6482718ED15276C590A18AF5517</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-SnapSliderFilters_Tests/Pods-SnapSliderFilters_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_SnapSliderFilters_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FAF1152B0860AE0FF5E17BEEB8AE62DF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SnapSliderFilters_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FBF53C17F77D6FBE435A9369A008E53F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03502462C3E48CD57696B2914A53E79F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		16B8ABD0532C88D8BE6E5E841792FDFA /* SnapSliderFilters-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E80757AEAF0620F282052314BC5156A /* SnapSliderFilters-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E1F8F54B94EE51186E79EC6A2B27E05 /* SNSliderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08965B8D111F2DC8C34B13965A98EE7 /* SNSliderDataSource.swift */; };
+		39414DED5C8BB5D7F86B0F9F6DF8EAFC /* SNFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */; };
+		5D7210CB97776B768C88851FB8929AF4 /* Pods-SnapSliderFilters_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D01F69FD6D41A3FE1F069BA8A419242 /* Pods-SnapSliderFilters_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F083A453778F3DED02F355919A5EACB /* Pods-SnapSliderFilters_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFB0A30FE8ECEFEBA2FA2FEE62B773 /* Pods-SnapSliderFilters_Example-dummy.m */; };
+		6800ADB1057EBF323064B3BEC2DAF4FA /* SNSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */; };
+		79397985D5948D03E818B6E2E76ABF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		86F669E3AFF0E97365B23CDE1938492D /* SNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B12E1D1F65F6EB6239F12E91919137 /* SNTextField.swift */; };
+		9BF0F03A176C40301EDD4C4125365FDC /* Pods-SnapSliderFilters_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BE32C2F2600859C44D55B5AE285CBB /* Pods-SnapSliderFilters_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3B38F0CD89DF84F1392653C40C08DBD /* SNUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */; };
+		C7DCE3542F15BF21EC9BA245E5B918CE /* Pods-SnapSliderFilters_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A18948A2DB6408866053AE21FD5E6 /* Pods-SnapSliderFilters_Tests-dummy.m */; };
+		C8E65C165B8158CB89A4FEE4B5184C60 /* SNSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11E37E752062D581B439C0607DDAB8 /* SNSticker.swift */; };
+		E18CE723F7B6CD734F65AA4D54344A6D /* SnapSliderFilters-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 700AA7703D155D7F375D934D1AACA3BB /* SnapSliderFilters-dummy.m */; };
+		FBF53C17F77D6FBE435A9369A008E53F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27570033427625549D07502D7B770CE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC7E80C1B27CC4BA08C07AB237964B6;
+			remoteInfo = SnapSliderFilters;
+		};
+		7A9794A1475618DDFB179FE68228AD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC7E80C1B27CC4BA08C07AB237964B6;
+			remoteInfo = SnapSliderFilters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E4DB8475C8819432A1C815283E4E52F /* Pods-SnapSliderFilters_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		184D07FF9E9B4FAC2286ADE2EAFF4985 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BE32C2F2600859C44D55B5AE285CBB /* Pods-SnapSliderFilters_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SnapSliderFilters_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2EB00D2D4ACD01B1A7980A79DD9D68A2 /* Pods-SnapSliderFilters_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnapSliderFilters_Example-resources.sh"; sourceTree = "<group>"; };
+		3608A6482718ED15276C590A18AF5517 /* Pods-SnapSliderFilters_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		371DD59D524D1E66EA8EB64BB473CA38 /* Pods-SnapSliderFilters_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SnapSliderFilters_Tests.modulemap"; sourceTree = "<group>"; };
+		37B12E1D1F65F6EB6239F12E91919137 /* SNTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNTextField.swift; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46B77637576DD533CC836A1C8D9B6222 /* Pods-SnapSliderFilters_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapSliderFilters.xcconfig; sourceTree = "<group>"; };
+		52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNSlider.swift; sourceTree = "<group>"; };
+		544C6CB47B48E9598CE2B936A5A45926 /* Pods-SnapSliderFilters_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNFilter.swift; sourceTree = "<group>"; };
+		6E6EBF5AAE717F87DB816D22CD99DE06 /* Pods-SnapSliderFilters_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SnapSliderFilters_Example.modulemap"; sourceTree = "<group>"; };
+		700AA7703D155D7F375D934D1AACA3BB /* SnapSliderFilters-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapSliderFilters-dummy.m"; sourceTree = "<group>"; };
+		73D6C725F76A5956F5322EBC257C790A /* Pods-SnapSliderFilters_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SnapSliderFilters_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7911C15906C759665151F265269EDF5C /* Pods-SnapSliderFilters_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnapSliderFilters_Tests-resources.sh"; sourceTree = "<group>"; };
+		81BFB0A30FE8ECEFEBA2FA2FEE62B773 /* Pods-SnapSliderFilters_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SnapSliderFilters_Example-dummy.m"; sourceTree = "<group>"; };
+		863062518D4412996AC9C8FAF699E5E6 /* Pods_SnapSliderFilters_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapSliderFilters_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8687D419D46093E5BD1DF352C9F3ACA4 /* Pods-SnapSliderFilters_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnapSliderFilters_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8E11E37E752062D581B439C0607DDAB8 /* SNSticker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNSticker.swift; sourceTree = "<group>"; };
+		8E80757AEAF0620F282052314BC5156A /* SnapSliderFilters-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapSliderFilters-umbrella.h"; sourceTree = "<group>"; };
+		97CBE8D234C4940006E8DEB35A17CADE /* Pods_SnapSliderFilters_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapSliderFilters_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D01F69FD6D41A3FE1F069BA8A419242 /* Pods-SnapSliderFilters_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SnapSliderFilters_Example-umbrella.h"; sourceTree = "<group>"; };
+		9D1014BD4938F573AFF60647B8E192A1 /* SnapSliderFilters-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapSliderFilters-prefix.pch"; sourceTree = "<group>"; };
+		AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNUtils.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB3A143EC915B31EC2217B0E6D1158C7 /* SnapSliderFilters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapSliderFilters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4072B054A30B30590198B8989897AB /* Pods-SnapSliderFilters_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SnapSliderFilters_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C08965B8D111F2DC8C34B13965A98EE7 /* SNSliderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNSliderDataSource.swift; sourceTree = "<group>"; };
+		C628506923FD16E8319FBA3A3E23F852 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D73A18948A2DB6408866053AE21FD5E6 /* Pods-SnapSliderFilters_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SnapSliderFilters_Tests-dummy.m"; sourceTree = "<group>"; };
+		DBC95305A4F8A5D0B9274A46B9C5D43E /* Pods-SnapSliderFilters_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SnapSliderFilters_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9670F85C5DB6C6E7A14BA45BD5EBFFF /* Pods-SnapSliderFilters_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SnapSliderFilters_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ECC39F49907202009C3977B04539ECB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE9BBEDEC3B3F3502BF24761840C719 /* SnapSliderFilters.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapSliderFilters.modulemap; sourceTree = "<group>"; };
+		FAF1152B0860AE0FF5E17BEEB8AE62DF /* Pods-SnapSliderFilters_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnapSliderFilters_Tests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0028C0622072378264CC98318A4223DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03502462C3E48CD57696B2914A53E79F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BE797FBD622509E411577E809A3B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF53C17F77D6FBE435A9369A008E53F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A52DB86D0551A1C654818A44D21432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79397985D5948D03E818B6E2E76ABF55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		447DA05572A81CF453FCA8DE85AA2070 /* SnapSliderFilters */ = {
+			isa = PBXGroup;
+			children = (
+				5A81F4AA8DE7305BC6B51A9DC4731941 /* Classes */,
+			);
+			path = SnapSliderFilters;
+			sourceTree = "<group>";
+		};
+		4C8FFF7154916914E2EB04872C9F7F98 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CED890C5D2DED2F630744CBE8D193F02 /* SnapSliderFilters */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4F2CC6ED1FFA0D7CB94F181D3398FE8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				184D07FF9E9B4FAC2286ADE2EAFF4985 /* Info.plist */,
+				ECE9BBEDEC3B3F3502BF24761840C719 /* SnapSliderFilters.modulemap */,
+				47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */,
+				700AA7703D155D7F375D934D1AACA3BB /* SnapSliderFilters-dummy.m */,
+				9D1014BD4938F573AFF60647B8E192A1 /* SnapSliderFilters-prefix.pch */,
+				8E80757AEAF0620F282052314BC5156A /* SnapSliderFilters-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SnapSliderFilters";
+			sourceTree = "<group>";
+		};
+		518D5D0132D4612C5D25BCCF3364C668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97CBE8D234C4940006E8DEB35A17CADE /* Pods_SnapSliderFilters_Example.framework */,
+				863062518D4412996AC9C8FAF699E5E6 /* Pods_SnapSliderFilters_Tests.framework */,
+				BB3A143EC915B31EC2217B0E6D1158C7 /* SnapSliderFilters.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A81F4AA8DE7305BC6B51A9DC4731941 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */,
+				52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */,
+				C08965B8D111F2DC8C34B13965A98EE7 /* SNSliderDataSource.swift */,
+				8E11E37E752062D581B439C0607DDAB8 /* SNSticker.swift */,
+				37B12E1D1F65F6EB6239F12E91919137 /* SNTextField.swift */,
+				AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		75007460066FC56B4FDB1EC19877CAAA /* Pods-SnapSliderFilters_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C628506923FD16E8319FBA3A3E23F852 /* Info.plist */,
+				371DD59D524D1E66EA8EB64BB473CA38 /* Pods-SnapSliderFilters_Tests.modulemap */,
+				73D6C725F76A5956F5322EBC257C790A /* Pods-SnapSliderFilters_Tests-acknowledgements.markdown */,
+				E9670F85C5DB6C6E7A14BA45BD5EBFFF /* Pods-SnapSliderFilters_Tests-acknowledgements.plist */,
+				D73A18948A2DB6408866053AE21FD5E6 /* Pods-SnapSliderFilters_Tests-dummy.m */,
+				FAF1152B0860AE0FF5E17BEEB8AE62DF /* Pods-SnapSliderFilters_Tests-frameworks.sh */,
+				7911C15906C759665151F265269EDF5C /* Pods-SnapSliderFilters_Tests-resources.sh */,
+				22BE32C2F2600859C44D55B5AE285CBB /* Pods-SnapSliderFilters_Tests-umbrella.h */,
+				0E4DB8475C8819432A1C815283E4E52F /* Pods-SnapSliderFilters_Tests.debug.xcconfig */,
+				3608A6482718ED15276C590A18AF5517 /* Pods-SnapSliderFilters_Tests.release.xcconfig */,
+			);
+			name = "Pods-SnapSliderFilters_Tests";
+			path = "Target Support Files/Pods-SnapSliderFilters_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				4C8FFF7154916914E2EB04872C9F7F98 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				518D5D0132D4612C5D25BCCF3364C668 /* Products */,
+				9CD5791CD1086E9AB9DC5BE5CBA1AAFD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9CD5791CD1086E9AB9DC5BE5CBA1AAFD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9A4AFC63928BC17C88AA5334805770D /* Pods-SnapSliderFilters_Example */,
+				75007460066FC56B4FDB1EC19877CAAA /* Pods-SnapSliderFilters_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CED890C5D2DED2F630744CBE8D193F02 /* SnapSliderFilters */ = {
+			isa = PBXGroup;
+			children = (
+				447DA05572A81CF453FCA8DE85AA2070 /* SnapSliderFilters */,
+				4F2CC6ED1FFA0D7CB94F181D3398FE8B /* Support Files */,
+			);
+			name = SnapSliderFilters;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D9A4AFC63928BC17C88AA5334805770D /* Pods-SnapSliderFilters_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ECC39F49907202009C3977B04539ECB4 /* Info.plist */,
+				6E6EBF5AAE717F87DB816D22CD99DE06 /* Pods-SnapSliderFilters_Example.modulemap */,
+				DBC95305A4F8A5D0B9274A46B9C5D43E /* Pods-SnapSliderFilters_Example-acknowledgements.markdown */,
+				BE4072B054A30B30590198B8989897AB /* Pods-SnapSliderFilters_Example-acknowledgements.plist */,
+				81BFB0A30FE8ECEFEBA2FA2FEE62B773 /* Pods-SnapSliderFilters_Example-dummy.m */,
+				8687D419D46093E5BD1DF352C9F3ACA4 /* Pods-SnapSliderFilters_Example-frameworks.sh */,
+				2EB00D2D4ACD01B1A7980A79DD9D68A2 /* Pods-SnapSliderFilters_Example-resources.sh */,
+				9D01F69FD6D41A3FE1F069BA8A419242 /* Pods-SnapSliderFilters_Example-umbrella.h */,
+				46B77637576DD533CC836A1C8D9B6222 /* Pods-SnapSliderFilters_Example.debug.xcconfig */,
+				544C6CB47B48E9598CE2B936A5A45926 /* Pods-SnapSliderFilters_Example.release.xcconfig */,
+			);
+			name = "Pods-SnapSliderFilters_Example";
+			path = "Target Support Files/Pods-SnapSliderFilters_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		909B7544E3E7DD00C89B4EC40F8DBED1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF0F03A176C40301EDD4C4125365FDC /* Pods-SnapSliderFilters_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97E9E33D491A3F4C4EB7A3630391D53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7210CB97776B768C88851FB8929AF4 /* Pods-SnapSliderFilters_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7DF9BE369DE1C5F356A5F68DEAA500 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B8ABD0532C88D8BE6E5E841792FDFA /* SnapSliderFilters-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F3FDF782886F3896275161381892DE5 /* Pods-SnapSliderFilters_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F185008818461081FD31A1F6C4416CBA /* Build configuration list for PBXNativeTarget "Pods-SnapSliderFilters_Tests" */;
+			buildPhases = (
+				59F76A37CBDDC28F3BFAD82F6192B122 /* Sources */,
+				0028C0622072378264CC98318A4223DB /* Frameworks */,
+				909B7544E3E7DD00C89B4EC40F8DBED1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CA6C00F746E44E78BB164F58A85A7F2 /* PBXTargetDependency */,
+			);
+			name = "Pods-SnapSliderFilters_Tests";
+			productName = "Pods-SnapSliderFilters_Tests";
+			productReference = 863062518D4412996AC9C8FAF699E5E6 /* Pods_SnapSliderFilters_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5156FAF0B2ACFD7E48AB85EF47AA8ADD /* Pods-SnapSliderFilters_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2685F79F41F613A17E6568C750C8E40D /* Build configuration list for PBXNativeTarget "Pods-SnapSliderFilters_Example" */;
+			buildPhases = (
+				B06D5EFDC361679E61EE575A77DA2703 /* Sources */,
+				37A52DB86D0551A1C654818A44D21432 /* Frameworks */,
+				A97E9E33D491A3F4C4EB7A3630391D53 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A55DEF994889F6EF0240002CA2D0CDFB /* PBXTargetDependency */,
+			);
+			name = "Pods-SnapSliderFilters_Example";
+			productName = "Pods-SnapSliderFilters_Example";
+			productReference = 97CBE8D234C4940006E8DEB35A17CADE /* Pods_SnapSliderFilters_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7CC7E80C1B27CC4BA08C07AB237964B6 /* SnapSliderFilters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51F2E2BE0CF69D7E6CCFBAE6B5F8417E /* Build configuration list for PBXNativeTarget "SnapSliderFilters" */;
+			buildPhases = (
+				15FAD128A909873BBCB8872BB9098A9A /* Sources */,
+				04BE797FBD622509E411577E809A3B95 /* Frameworks */,
+				AE7DF9BE369DE1C5F356A5F68DEAA500 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapSliderFilters;
+			productName = SnapSliderFilters;
+			productReference = BB3A143EC915B31EC2217B0E6D1158C7 /* SnapSliderFilters.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 518D5D0132D4612C5D25BCCF3364C668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5156FAF0B2ACFD7E48AB85EF47AA8ADD /* Pods-SnapSliderFilters_Example */,
+				1F3FDF782886F3896275161381892DE5 /* Pods-SnapSliderFilters_Tests */,
+				7CC7E80C1B27CC4BA08C07AB237964B6 /* SnapSliderFilters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15FAD128A909873BBCB8872BB9098A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18CE723F7B6CD734F65AA4D54344A6D /* SnapSliderFilters-dummy.m in Sources */,
+				39414DED5C8BB5D7F86B0F9F6DF8EAFC /* SNFilter.swift in Sources */,
+				6800ADB1057EBF323064B3BEC2DAF4FA /* SNSlider.swift in Sources */,
+				1E1F8F54B94EE51186E79EC6A2B27E05 /* SNSliderDataSource.swift in Sources */,
+				C8E65C165B8158CB89A4FEE4B5184C60 /* SNSticker.swift in Sources */,
+				86F669E3AFF0E97365B23CDE1938492D /* SNTextField.swift in Sources */,
+				C3B38F0CD89DF84F1392653C40C08DBD /* SNUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F76A37CBDDC28F3BFAD82F6192B122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DCE3542F15BF21EC9BA245E5B918CE /* Pods-SnapSliderFilters_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06D5EFDC361679E61EE575A77DA2703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F083A453778F3DED02F355919A5EACB /* Pods-SnapSliderFilters_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CA6C00F746E44E78BB164F58A85A7F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapSliderFilters;
+			target = 7CC7E80C1B27CC4BA08C07AB237964B6 /* SnapSliderFilters */;
+			targetProxy = 7A9794A1475618DDFB179FE68228AD18 /* PBXContainerItemProxy */;
+		};
+		A55DEF994889F6EF0240002CA2D0CDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapSliderFilters;
+			target = 7CC7E80C1B27CC4BA08C07AB237964B6 /* SnapSliderFilters */;
+			targetProxy = 27570033427625549D07502D7B770CE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E56B83F147EA68115A100B08F62665A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544C6CB47B48E9598CE2B936A5A45926 /* Pods-SnapSliderFilters_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SnapSliderFilters_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SnapSliderFilters_Example/Pods-SnapSliderFilters_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SnapSliderFilters_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D5718663B69C72DF115F414FD054567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapSliderFilters/SnapSliderFilters-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapSliderFilters/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapSliderFilters/SnapSliderFilters.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapSliderFilters;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C684633D55DDE2FF7F45F981B9CBDB5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B77637576DD533CC836A1C8D9B6222 /* Pods-SnapSliderFilters_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SnapSliderFilters_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SnapSliderFilters_Example/Pods-SnapSliderFilters_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SnapSliderFilters_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE40D4C855EF1DE700701CD66BDCE493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4DB8475C8819432A1C815283E4E52F /* Pods-SnapSliderFilters_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SnapSliderFilters_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SnapSliderFilters_Tests/Pods-SnapSliderFilters_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SnapSliderFilters_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD64515DEE980820AA36D72907CF7E80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapSliderFilters/SnapSliderFilters-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapSliderFilters/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapSliderFilters/SnapSliderFilters.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapSliderFilters;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5CC52AFCF9526CF41A7729DE7A3F962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3608A6482718ED15276C590A18AF5517 /* Pods-SnapSliderFilters_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SnapSliderFilters_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SnapSliderFilters_Tests/Pods-SnapSliderFilters_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SnapSliderFilters_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2685F79F41F613A17E6568C750C8E40D /* Build configuration list for PBXNativeTarget "Pods-SnapSliderFilters_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C684633D55DDE2FF7F45F981B9CBDB5C /* Debug */,
+				2E56B83F147EA68115A100B08F62665A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51F2E2BE0CF69D7E6CCFBAE6B5F8417E /* Build configuration list for PBXNativeTarget "SnapSliderFilters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5718663B69C72DF115F414FD054567 /* Debug */,
+				DD64515DEE980820AA36D72907CF7E80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F185008818461081FD31A1F6C4416CBA /* Build configuration list for PBXNativeTarget "Pods-SnapSliderFilters_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE40D4C855EF1DE700701CD66BDCE493 /* Debug */,
+				F5CC52AFCF9526CF41A7729DE7A3F962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

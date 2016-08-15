@@ -10,9 +10,10 @@ import UIKit
 
 public class SNFilter: UIImageView {
     
-    public static let filterNameList = ["No Filter" , "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer", "CIPhotoEffectInstant", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal", ]
+    // Full list available here : https://developer.apple.com/library/tvos/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
+    public static let filterNameList = ["No Filter" , "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer", "CIPhotoEffectInstant", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal"]
     public var name:String?
-    var stickers:[SNSticker] = []
+    var stickers = [SNSticker]()
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -93,10 +94,18 @@ public class SNFilter: UIImageView {
     
     public static func generateFilters(originalImage: SNFilter, filters:[String]) -> [SNFilter] {
         
-        var finalFilters:[SNFilter] = []
+        var finalFilters = [SNFilter]()
         
-        for filterName in filters {
-            finalFilters.append(originalImage.applyFilter(filterNamed: filterName))
+        let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
+        let qos_attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, 0)
+        let syncQueue = dispatch_queue_create("com.snapsliderfilters.app", qos_attr)
+        
+        dispatch_apply(filters.count, queue) { iteration in
+            var filterComputed = originalImage.applyFilter(filterNamed: filters[iteration])
+            dispatch_sync(syncQueue) {
+                finalFilters.append(filterComputed)
+                return
+            }
         }
         
         return finalFilters
