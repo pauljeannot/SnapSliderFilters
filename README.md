@@ -141,7 +141,7 @@ NSNotificationCenter.defaultCenter().removeObserver(textField)
 
 ## Author
 
-Paul Jeannot, Computer Science & Engineering Student at University of Technologie of Compiègne. 
+Paul Jeannot, Computer Science & Engineering Student at University of Technology of Compiègne. 
 Contact at paul.jeannot95@gmail.com
 
 ## License
