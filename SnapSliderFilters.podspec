@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-SnapSliderFilters allows you to create easily a SnapChat like navigation between a picture and its filters (automatically generated). You can add stickers above slides, tap on the screen to add a message and place it wherever you want, exactly as you do every day on SnapChat !
+SnapSliderFilters allows you to easily create a SnapChat like navigation between a picture and its filters (automatically generated). You can add stickers above slides, tap on the screen to add a message and place it wherever you want, exactly as you would do on SnapChat !
                        DESC
 
   s.homepage         = "https://github.com/pauljeannot/SnapSliderFilters"

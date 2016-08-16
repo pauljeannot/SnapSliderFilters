@@ -20,6 +20,7 @@ public class SNTextField: UITextField {
         self.heightOfScreen = height
         
         super.init(frame: CGRect(x: 0, y: y, width: width, height: 40))
+        self.layer.zPosition = 100
         self.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.45)
         self.tintColor = UIColor.whiteColor()
         self.textColor = UIColor.whiteColor()
@@ -41,19 +42,19 @@ public class SNTextField: UITextField {
         self.addGestureRecognizer(panGesture)
     }
     
-    func show() {
+    private func show() {
         self.hidden = false
     }
     
-    func hideKeyboard() {
+    private func hideKeyboard() {
         self.resignFirstResponder();
     }
     
-    func showKeyboard() {
+    private func showKeyboard() {
         self.becomeFirstResponder();
     }
     
-    func touchMoved(position: CGPoint) {
+    private func touchMoved(position: CGPoint) {
     }
     
     required public init?(coder aDecoder: NSCoder) {

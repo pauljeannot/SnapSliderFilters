@@ -100,8 +100,7 @@ public class SNFilter: UIImageView {
         let qos_attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, 0)
         let syncQueue = dispatch_queue_create("com.snapsliderfilters.app", qos_attr)
         
-        
-        // Each filter can be generated on a different thread 
+        // Each filter can be generated on a different thread
         dispatch_apply(filters.count, queue) { iteration in
             let filterComputed = originalImage.applyFilter(filterNamed: filters[iteration])
             dispatch_sync(syncQueue) {
