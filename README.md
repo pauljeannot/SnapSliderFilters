@@ -141,9 +141,11 @@ NSNotificationCenter.defaultCenter().removeObserver(textField)
 
 ## Author
 
-Paul Jeannot, Computer Science & Engineering Student at University of Technology of Compiègne. 
+Paul Jeannot, Computer Science & Engineering student at University of Technology of Compiègne. 
 Contact at paul.jeannot95@gmail.com
 
 ## License
+
+Free Icons provided by [Icons8](https://icons8.com)
 
 SnapSliderFilters is available under the MIT license. See the LICENSE file for more info.
