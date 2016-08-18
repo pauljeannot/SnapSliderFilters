@@ -22,7 +22,7 @@ pod "SnapSliderFilters"
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-This demo allows you to import your own images from the camera roll and to save the final edited one.
+This demo allows you to import your own image from the camera roll and to save the final edited image.
 
 ## Requirements
 
@@ -42,7 +42,7 @@ iPhone 4s, 5, 5s, 5c, 6, 6 Plus, 6s, 6s Plus, all iPad having iOS 9.
 
 To insert a slider in your ViewController, all you need is to create the slider, load the data and show it.
 
-The slider **must** be in displayed in fullscreen. `SNUtils` allows you to do it easily :
+The slider **must** be displayed in fullscreen. `SNUtils` allows you to do it easily :
 ```swift
 var slider = SNSlider(frame: CGRect(origin: CGPointZero, size: SNUtils.screenSize))
 ```
@@ -57,9 +57,9 @@ var data  = SNFilter.generateFilters(originalPicture, filters: SNFilter.filterNa
 
 You can add some stickers above your filters, by creating a `SNSticker` and adding it to the proper filter :
 ```swift
-var sticker = SNSticker(frame: CGRect(x: 20, y: 0, width: 140, height: 140), image: UIImage(named: "stick")!)
+var sticker = SNSticker(frame: CGRect(x: 20, y: 0, width: 140, height: 140), image: UIImage(named: "sticker1")!)
 // In case of overlapping, you can provide a zPosition (the default one is 0)
-var sticker2 = SNSticker(frame: CGRect(x: 30, y: 0, width: 140, height: 140), image: UIImage(named: "stick")!, atZPosition: 2))
+var sticker2 = SNSticker(frame: CGRect(x: 30, y: 0, width: 140, height: 140), image: UIImage(named: "sticker2")!, atZPosition: 2))
 
 // 2 stickers will be added to the filter at index 1
 self.data[1].addSticker(sticker)
@@ -99,7 +99,7 @@ slider.reloadData()
 
 ### TextField
 
-If you want to add a Snapchat like textfield above your slider, your can do it easily as well. Firstly, create the `SNTextField` : all you need to pass is your `y` starting point for the textfield, the width and the height of your screen (once again, `SNUtils` helps you in this case).
+If you want to add a Snapchat like textfield above your slider, your can do it easily as well. Firstly, create the `SNTextField` : all you need to pass is your `y` starting point for the textfield, the width and the height of your screen (once again, `SNUtils` can help you).
 
 ```swift
 var textfield = SNTextField(y: SNUtils.screenSize.height/2, width: SNUtils.screenSize.width, heightOfScreen: SNUtils.screenSize.height)
@@ -149,7 +149,7 @@ private let button = SNButton(frame: CGRect(x: 20, y: SNUtils.screenSize.height 
 
 button.setAction {
   [weak weakSelf = self] in
-  // To do when to button is pressed
+  // To do when the button is pressed
 }
   
 view.addSubview(button)
@@ -160,6 +160,10 @@ view.addSubview(button)
 ```swift
 let picture = SNUtils.screenShot(self.view)
 ```
+
+If you have things on the screen that you don't want on your final image (buttons, ...), you can create another `UIView`, add everything you want to be on the picture as its subviews and perform the screenshot on this view.
+
+You will find an example of this method in the example project (see `screenView`).
 
 ## Author
 
