@@ -8,6 +8,7 @@ SnapSliderFilters allows you to create easily a SnapChat like navigation between
 
 ![Gif example 1](https://media.giphy.com/media/l0K4a2gNdOxrMH3Tq/giphy.gif)
 ![Gif example 2](https://media.giphy.com/media/26FxxUyEKHtLQHwrK/giphy.gif)
+![Gif example 3](https://media.giphy.com/media/oXPF7y8JHUJsQ/giphy.gif)
 
 ## Installation with CocoaPods
 
