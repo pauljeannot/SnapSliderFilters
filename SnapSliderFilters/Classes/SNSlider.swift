@@ -39,6 +39,7 @@ public class SNSlider: UIView {
     }
     
     public func reloadData() {
+        self.cleanData()
         self.loadData()
         self.presentData()
     }
@@ -48,7 +49,26 @@ public class SNSlider: UIView {
         return data[Int(index)]
     }
     
+    private func cleanData() {
+        for v in subviews {
+            let filter = v as? SNFilter
+            if filter != nil {
+                v.removeFromSuperview()
+            }
+        }
+        
+        for s in slider.subviews {
+            let sticker = s as? SNSticker
+            if  sticker != nil {
+                s.removeFromSuperview()
+            }
+        }
+        
+        data.removeAll()
+    }
+    
     private func loadData() {
+        
         self.numberOfPages = dataSource!.numberOfSlides(self)
         self.startingIndex = dataSource!.startAtIndex(self)
         self.slider.contentSize = CGSize(width: self.frame.width*(CGFloat(numberOfPages+2)), height: self.frame.height)
@@ -88,6 +108,8 @@ public class SNSlider: UIView {
     }
 }
 
+// MARK: - Scroll View Delegate
+
 extension SNSlider: UIScrollViewDelegate {
     
     public func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -95,9 +117,7 @@ extension SNSlider: UIScrollViewDelegate {
         for i in 0..<data.count {
             data[i].updateMask(data[i].frame, newXPosition: positionOfPageAtIndex(i-1)-scrollView.contentOffset.x)
         }
-        
-        
-    } // Well synchronized with the scrolling position : scrollView.contentOffset.x
+    }
     
     public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         
@@ -107,6 +127,6 @@ extension SNSlider: UIScrollViewDelegate {
         else if (scrollView.contentOffset.x == positionOfPageAtIndex(numberOfPages)) {
             self.slider.scrollRectToVisible(CGRect(x: positionOfPageAtIndex(0),y: 0,width: self.frame.width,height: self.frame.height), animated:false);
         }
-    } // Works great
+    }
     
 }

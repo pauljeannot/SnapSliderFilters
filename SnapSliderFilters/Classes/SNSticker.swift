@@ -12,6 +12,7 @@ public class SNSticker: UIImageView {
     
     public init(frame: CGRect, image:UIImage, withContentMode mode: UIViewContentMode = .ScaleAspectFit, atZPosition zIndex:CGFloat? = nil) {
         super.init(frame: frame)
+        
         self.contentMode = mode
         self.clipsToBounds = true
         self.image = image
@@ -27,6 +28,8 @@ public class SNSticker: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+// MARK : - NSCopying protocol 
 
 extension SNSticker: NSCopying {
     

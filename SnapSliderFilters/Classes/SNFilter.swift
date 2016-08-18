@@ -10,7 +10,7 @@ import UIKit
 
 public class SNFilter: UIImageView {
     
-    // Full list available here : https://developer.apple.com/library/tvos/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
+    // Full list of filters available here : https://developer.apple.com/library/tvos/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
     public static let filterNameList = ["No Filter" , "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer", "CIPhotoEffectInstant", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal"]
     public var name:String?
     var stickers = [SNSticker]()
@@ -112,6 +112,8 @@ public class SNFilter: UIImageView {
         return finalFilters
     }
 }
+
+// MARK: - NSCopying protocol
 
 extension SNFilter: NSCopying {
     

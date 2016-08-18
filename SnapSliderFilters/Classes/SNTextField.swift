@@ -99,7 +99,8 @@ extension SNTextField: UITextFieldDelegate {
     }
 }
 
-//MARK: - Extension Gesture Recognizer Delegate and touch Handler for TextField
+//MARK: - Extension Gesture Recognizer Delegate and touch handler for TextField
+
 extension SNTextField: UIGestureRecognizerDelegate {
     
     public func handleTap() {
@@ -113,6 +114,9 @@ extension SNTextField: UIGestureRecognizerDelegate {
     }
     
     func handlePan(recognizer:UIPanGestureRecognizer) {
+        
+        if self.isFirstResponder() == true { return }
+        
         let position = panGesture.locationInView(self)
         let tempLocation = location.y + position.y
         

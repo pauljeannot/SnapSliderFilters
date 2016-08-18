@@ -17,6 +17,8 @@ public protocol SNSliderDataSource : class {
     func startAtIndex(slider: SNSlider) -> Int
 }
 
+// MARK : - Extension Datasource
+
 extension SNSliderDataSource {
     
     func numberOfSlides(slider: SNSlider) -> Int {

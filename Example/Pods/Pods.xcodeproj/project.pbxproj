@@ -18,6 +18,7 @@
 		86F669E3AFF0E97365B23CDE1938492D /* SNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B12E1D1F65F6EB6239F12E91919137 /* SNTextField.swift */; };
 		9BF0F03A176C40301EDD4C4125365FDC /* Pods-SnapSliderFilters_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BE32C2F2600859C44D55B5AE285CBB /* Pods-SnapSliderFilters_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B41EA0EE1D62469C00902759 /* SNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EA0EC1D62469C00902759 /* SNButton.swift */; };
+		B4DDDF041D667230003C74A2 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DDDF031D667230003C74A2 /* UIImageExtension.swift */; };
 		C3B38F0CD89DF84F1392653C40C08DBD /* SNUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */; };
 		C7DCE3542F15BF21EC9BA245E5B918CE /* Pods-SnapSliderFilters_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D73A18948A2DB6408866053AE21FD5E6 /* Pods-SnapSliderFilters_Tests-dummy.m */; };
 		C8E65C165B8158CB89A4FEE4B5184C60 /* SNSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11E37E752062D581B439C0607DDAB8 /* SNSticker.swift */; };
@@ -70,6 +71,7 @@
 		9D1014BD4938F573AFF60647B8E192A1 /* SnapSliderFilters-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapSliderFilters-prefix.pch"; sourceTree = "<group>"; };
 		AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNUtils.swift; sourceTree = "<group>"; };
 		B41EA0EC1D62469C00902759 /* SNButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNButton.swift; sourceTree = "<group>"; };
+		B4DDDF031D667230003C74A2 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB3A143EC915B31EC2217B0E6D1158C7 /* SnapSliderFilters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapSliderFilters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4072B054A30B30590198B8989897AB /* Pods-SnapSliderFilters_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SnapSliderFilters_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				37B12E1D1F65F6EB6239F12E91919137 /* SNTextField.swift */,
 				AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */,
 				B41EA0EC1D62469C00902759 /* SNButton.swift */,
+				B4DDDF031D667230003C74A2 /* UIImageExtension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				6800ADB1057EBF323064B3BEC2DAF4FA /* SNSlider.swift in Sources */,
 				1E1F8F54B94EE51186E79EC6A2B27E05 /* SNSliderDataSource.swift in Sources */,
 				C8E65C165B8158CB89A4FEE4B5184C60 /* SNSticker.swift in Sources */,
+				B4DDDF041D667230003C74A2 /* UIImageExtension.swift in Sources */,
 				86F669E3AFF0E97365B23CDE1938492D /* SNTextField.swift in Sources */,
 				B41EA0EE1D62469C00902759 /* SNButton.swift in Sources */,
 				C3B38F0CD89DF84F1392653C40C08DBD /* SNUtils.swift in Sources */,
