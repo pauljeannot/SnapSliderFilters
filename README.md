@@ -140,9 +140,9 @@ override func viewWillDisappear(animated: Bool) {
 }
 ```
 
-### Snap buttons
+### Buttons
 
-You can also add some snap-like buttons with a simple target-action method : 
+You can also add some snap-like buttons with a very simple target-action method :
 
 ```swift
 private let button = SNButton(frame: CGRect(x: 20, y: SNUtils.screenSize.height - 35, width: 33, height: 30), withImageNamed: "saveButton")
