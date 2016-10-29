@@ -8,14 +8,14 @@
 
 import UIKit
 
-public class SNSlider: UIView {
+open class SNSlider: UIView {
     
-    private var slider:UIScrollView
-    private var numberOfPages:Int
-    private var startingIndex:Int
-    private var data = [SNFilter]()
+    fileprivate var slider:UIScrollView
+    fileprivate var numberOfPages:Int
+    fileprivate var startingIndex:Int
+    fileprivate var data = [SNFilter]()
     
-    public weak var dataSource:SNSliderDataSource?
+    open weak var dataSource:SNSliderDataSource?
     
     public override init(frame: CGRect) {
         
@@ -26,7 +26,7 @@ public class SNSlider: UIView {
         super.init(frame: frame)
         
         self.slider.delegate = self
-        self.slider.pagingEnabled = true
+        self.slider.isPagingEnabled = true
         self.slider.bounces = false
         self.slider.showsHorizontalScrollIndicator = false
         self.slider.showsVerticalScrollIndicator = false
@@ -38,18 +38,18 @@ public class SNSlider: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func reloadData() {
+    open func reloadData() {
         self.cleanData()
         self.loadData()
         self.presentData()
     }
     
-    public func slideShown() -> SNFilter {
+    open func slideShown() -> SNFilter {
         let index = self.slider.contentOffset.x / slider.frame.size.width
         return data[Int(index)]
     }
     
-    private func cleanData() {
+    fileprivate func cleanData() {
         for v in subviews {
             let filter = v as? SNFilter
             if filter != nil {
@@ -67,7 +67,7 @@ public class SNSlider: UIView {
         data.removeAll()
     }
     
-    private func loadData() {
+    fileprivate func loadData() {
         
         self.numberOfPages = dataSource!.numberOfSlides(self)
         self.startingIndex = dataSource!.startAtIndex(self)
@@ -87,7 +87,7 @@ public class SNSlider: UIView {
         self.slider.scrollRectToVisible(CGRect(x: positionOfPageAtIndex(startingIndex),y: 0,width: self.frame.width,height: self.frame.height), animated:false);
     }
     
-    private func presentData() {
+    fileprivate func presentData() {
         
         for i in 0..<data.count {
             weak var filter:SNFilter! = data[i]
@@ -103,7 +103,7 @@ public class SNSlider: UIView {
         }
     }
     
-    private func positionOfPageAtIndex(index: Int) -> CGFloat {
+    fileprivate func positionOfPageAtIndex(_ index: Int) -> CGFloat {
         return self.frame.size.width*CGFloat(index) + self.frame.size.width
     }
 }
@@ -112,14 +112,14 @@ public class SNSlider: UIView {
 
 extension SNSlider: UIScrollViewDelegate {
     
-    public func scrollViewDidScroll(scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         for i in 0..<data.count {
             data[i].updateMask(data[i].frame, newXPosition: positionOfPageAtIndex(i-1)-scrollView.contentOffset.x)
         }
     }
     
-    public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         if (scrollView.contentOffset.x == positionOfPageAtIndex(-1)) {
             self.slider.scrollRectToVisible(CGRect(x: positionOfPageAtIndex(numberOfPages-1),y: 0,width: self.frame.width,height: self.frame.height), animated:false);

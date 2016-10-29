@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SNTextField: UITextField {
+open class SNTextField: UITextField {
     
     var location:CGPoint
     var panGesture:UIPanGestureRecognizer = UIPanGestureRecognizer()
@@ -22,39 +22,39 @@ public class SNTextField: UITextField {
         super.init(frame: CGRect(x: 0, y: y, width: width, height: 40))
         self.layer.zPosition = 100
         self.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.45)
-        self.tintColor = UIColor.whiteColor()
-        self.textColor = UIColor.whiteColor()
+        self.tintColor = UIColor.white
+        self.textColor = UIColor.white
         self.placeholder = ""
-        self.font = UIFont.systemFontOfSize(16)
-        self.borderStyle = UITextBorderStyle.None
-        self.autocorrectionType = UITextAutocorrectionType.No
-        self.keyboardType = UIKeyboardType.Default
-        self.returnKeyType = UIReturnKeyType.Done
-        self.clearButtonMode = UITextFieldViewMode.Never;
-        self.contentVerticalAlignment = UIControlContentVerticalAlignment.Center
-        self.textAlignment = .Center
-        self.contentHorizontalAlignment = .Center
+        self.font = UIFont.systemFont(ofSize: 16)
+        self.borderStyle = UITextBorderStyle.none
+        self.autocorrectionType = UITextAutocorrectionType.no
+        self.keyboardType = UIKeyboardType.default
+        self.returnKeyType = UIReturnKeyType.done
+        self.clearButtonMode = UITextFieldViewMode.never;
+        self.contentVerticalAlignment = UIControlContentVerticalAlignment.center
+        self.textAlignment = .center
+        self.contentHorizontalAlignment = .center
         self.delegate = self
-        self.hidden = true
+        self.isHidden = true
         
         panGesture = UIPanGestureRecognizer(target:self, action: #selector(SNTextField.handlePan(_:)))
         panGesture.delegate = self
         self.addGestureRecognizer(panGesture)
     }
     
-    private func show() {
-        self.hidden = false
+    fileprivate func show() {
+        self.isHidden = false
     }
     
-    private func hideKeyboard() {
+    fileprivate func hideKeyboard() {
         self.resignFirstResponder();
     }
     
-    private func showKeyboard() {
+    fileprivate func showKeyboard() {
         self.becomeFirstResponder();
     }
     
-    private func touchMoved(position: CGPoint) {
+    fileprivate func touchMoved(_ position: CGPoint) {
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -67,33 +67,33 @@ public class SNTextField: UITextField {
 extension SNTextField: UITextFieldDelegate {
     
     // If the TextField is empty, it's hidden
-    public func textFieldDidEndEditing(textField: UITextField) {
+    public func textFieldDidEndEditing(_ textField: UITextField) {
         if (self.text == "") {
-            self.hidden = true
+            self.isHidden = true
         }
     }
     
-    public func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true;
     }
     
-    public func textFieldShouldClear(textField: UITextField) -> Bool {
+    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
         return true;
     }
     
-    public func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+    public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return true;
     }
     
     // Limit the text size to the screen width
-    public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let text:NSString = (self.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
-        let contentWidth = text.sizeWithAttributes([NSFontAttributeName: UIFont.systemFontOfSize(16.0)]).width
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let text:NSString = (self.text! as NSString).replacingCharacters(in: range, with: string) as NSString
+        let contentWidth = text.size(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0)]).width
         return contentWidth <= (self.frame.width - 20)
     }
     
     // Hide the keyboard
-    public func textFieldShouldReturn(textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         hideKeyboard()
         return true;
     }
@@ -104,7 +104,7 @@ extension SNTextField: UITextFieldDelegate {
 extension SNTextField: UIGestureRecognizerDelegate {
     
     public func handleTap() {
-        if(self.hidden == true) {
+        if(self.isHidden == true) {
             self.show()
             self.showKeyboard()
         }
@@ -113,11 +113,11 @@ extension SNTextField: UIGestureRecognizerDelegate {
         }
     }
     
-    func handlePan(recognizer:UIPanGestureRecognizer) {
+    func handlePan(_ recognizer:UIPanGestureRecognizer) {
         
-        if self.isFirstResponder() == true { return }
+        if self.isFirstResponder == true { return }
         
-        let position = panGesture.locationInView(self)
+        let position = panGesture.location(in: self)
         let tempLocation = location.y + position.y
         
         if (tempLocation < 0) {
@@ -139,20 +139,20 @@ extension SNTextField: UIGestureRecognizerDelegate {
 
 public extension SNTextField {
     
-    func keyboardWillShow(notification: NSNotification) {
+    func keyboardWillShow(_ notification: Notification) {
         updatePosition(notification)
     }
     
-    func keyboardTypeChanged(notification: NSNotification) {
+    func keyboardTypeChanged(_ notification: Notification) {
         updatePosition(notification)
     }
     
-    func keyboardWillHide(notification: NSNotification) {
+    func keyboardWillHide(_ notification: Notification) {
         self.frame.origin.y = self.location.y
     }
     
-    func updatePosition(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue() {
+    func updatePosition(_ notification: Notification) {
+        if let keyboardSize = ((notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             self.frame.origin.y = self.heightOfScreen - keyboardSize.height - self.frame.size.height
         }
     }

@@ -12,14 +12,14 @@ import SnapSliderFilters
 class ViewController: UIViewController {
     
     // The screenView will be the screenshoted view : all its subviews will appear on it (so, don't add buttons in its subviews)
-    private let screenView:UIView = UIView(frame: CGRect(origin: CGPointZero, size: SNUtils.screenSize))
-    private let slider:SNSlider = SNSlider(frame: CGRect(origin: CGPointZero, size: SNUtils.screenSize))
-    private let textField = SNTextField(y: SNUtils.screenSize.height/2, width: SNUtils.screenSize.width, heightOfScreen: SNUtils.screenSize.height)
-    private let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer()
-    private let buttonSave = SNButton(frame: CGRect(x: 20, y: SNUtils.screenSize.height - 35, width: 33, height: 30), withImageNamed: "saveButton")
-    private let buttonCamera = SNButton(frame: CGRect(x: 75, y: SNUtils.screenSize.height - 42, width: 45, height: 45), withImageNamed: "galleryButton")
-    private let imagePicker = UIImagePickerController()
-    private var data:[SNFilter] = []
+    fileprivate let screenView:UIView = UIView(frame: CGRect(origin: CGPoint.zero, size: SNUtils.screenSize))
+    fileprivate let slider:SNSlider = SNSlider(frame: CGRect(origin: CGPoint.zero, size: SNUtils.screenSize))
+    fileprivate let textField = SNTextField(y: SNUtils.screenSize.height/2, width: SNUtils.screenSize.width, heightOfScreen: SNUtils.screenSize.height)
+    fileprivate let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer()
+    fileprivate let buttonSave = SNButton(frame: CGRect(x: 20, y: SNUtils.screenSize.height - 35, width: 33, height: 30), withImageNamed: "saveButton")
+    fileprivate let buttonCamera = SNButton(frame: CGRect(x: 75, y: SNUtils.screenSize.height - 42, width: 45, height: 45), withImageNamed: "galleryButton")
+    fileprivate let imagePicker = UIImagePickerController()
+    fileprivate var data:[SNFilter] = []
     
     //MARK: Overriden functions
     override func viewDidLoad() {
@@ -33,46 +33,46 @@ class ViewController: UIViewController {
         setupButtonCamera()
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
-    override func viewWillAppear(animated: Bool) {
-        UIApplication.sharedApplication().statusBarHidden = true
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.isStatusBarHidden = true
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().removeObserver(textField)
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(textField)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         UIView.setAnimationsEnabled(true)
     }
     
     //MARK: Setup
-    private func setupSlider() {
+    fileprivate func setupSlider() {
         self.createData(UIImage(named: "pic")!)
         self.slider.dataSource = self
-        self.slider.userInteractionEnabled = true
-        self.slider.multipleTouchEnabled = true
-        self.slider.exclusiveTouch = false
+        self.slider.isUserInteractionEnabled = true
+        self.slider.isMultipleTouchEnabled = true
+        self.slider.isExclusiveTouch = false
         
         self.screenView.addSubview(slider)
         self.slider.reloadData()
     }
     
-    private func setupTextField() {
+    fileprivate func setupTextField() {
         self.screenView.addSubview(textField)
         
         self.tapGesture.delegate = self
         self.slider.addGestureRecognizer(tapGesture)
         
-        NSNotificationCenter.defaultCenter().addObserver(self.textField, selector: #selector(SNTextField.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self.textField, selector: #selector(SNTextField.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self.textField, selector: #selector(SNTextField.keyboardTypeChanged(_:)), name: UIKeyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self.textField, selector: #selector(SNTextField.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self.textField, selector: #selector(SNTextField.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self.textField, selector: #selector(SNTextField.keyboardTypeChanged(_:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
     }
     
-    private func setupButtonSave() {
+    fileprivate func setupButtonSave() {
         self.buttonSave.setAction {
             [weak weakSelf = self] in
             let picture = SNUtils.screenShot(weakSelf?.screenView)
@@ -84,15 +84,15 @@ class ViewController: UIViewController {
         self.view.addSubview(self.buttonSave)
     }
     
-    private func setupButtonCamera() {
+    fileprivate func setupButtonCamera() {
         self.buttonCamera.setAction {
             [weak weakSelf = self] in
             
             if let tmpImagePicker = weakSelf?.imagePicker {
                 tmpImagePicker.allowsEditing = false
-                tmpImagePicker.sourceType = .PhotoLibrary
+                tmpImagePicker.sourceType = .photoLibrary
                 
-                weakSelf?.presentViewController(tmpImagePicker, animated: true, completion: nil)
+                weakSelf?.present(tmpImagePicker, animated: true, completion: nil)
             }
         }
         
@@ -101,7 +101,7 @@ class ViewController: UIViewController {
     }
     
     //MARK: Functions
-    private func createData(image: UIImage) {
+    fileprivate func createData(_ image: UIImage) {
         self.data = SNFilter.generateFilters(SNFilter(frame: self.slider.frame, withImage: image), filters: SNFilter.filterNameList)
         
         self.data[1].addSticker(SNSticker(frame: CGRect(x: 195, y: 30, width: 90, height: 90), image: UIImage(named: "stick2")!))
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
         self.data[3].addSticker(SNSticker(frame: CGRect(x: 20, y: 00, width: 140, height: 140), image: UIImage(named: "stick")!))
     }
     
-    private func updatePicture(newImage: UIImage) {
+    fileprivate func updatePicture(_ newImage: UIImage) {
         createData(newImage)
         slider.reloadData()
     }
@@ -119,16 +119,16 @@ class ViewController: UIViewController {
 
 extension ViewController: SNSliderDataSource {
     
-    func numberOfSlides(slider: SNSlider) -> Int {
+    func numberOfSlides(_ slider: SNSlider) -> Int {
         return data.count
     }
     
-    func slider(slider: SNSlider, slideAtIndex index: Int) -> SNFilter {
+    func slider(_ slider: SNSlider, slideAtIndex index: Int) -> SNFilter {
         
         return data[index]
     }
     
-    func startAtIndex(slider: SNSlider) -> Int {
+    func startAtIndex(_ slider: SNSlider) -> Int {
         return 0
     }
 }
@@ -146,7 +146,7 @@ extension ViewController: UIGestureRecognizerDelegate {
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
@@ -157,10 +157,10 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             }
         }
         
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        dismissViewControllerAnimated(true, completion: nil)
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
 }

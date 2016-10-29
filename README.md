@@ -70,21 +70,21 @@ Your ViewController must conform to the `SNSliderDataSource` protocol. It allows
 
 ```swift
 extension ViewController: SNSliderDataSource {
-
-// The number of SNFilters that you want in the slider
-func numberOfSlides(slider: SNSlider) -> Int {
-return data.count
-}
-
-// For a given index, you return the corresponding SNFilter
-func slider(slider: SNSlider, slideAtIndex index: Int) -> SNFilter {
-return data[index]
-}
-
-// The starting index of the slider
-func startAtIndex(slider: SNSlider) -> Int {
-return 0
-}
+  
+  // The number of SNFilters that you want in the slider
+  func numberOfSlides(slider: SNSlider) -> Int {
+    return data.count
+  }
+  
+  // For a given index, you return the corresponding SNFilter
+  func slider(slider: SNSlider, slideAtIndex index: Int) -> SNFilter {
+    return data[index]
+  }
+  
+  // The starting index of the slider
+  func startAtIndex(slider: SNSlider) -> Int {
+    return 0
+  }
 }
 ```
 
@@ -126,19 +126,16 @@ You ViewController must conform to the `UIGestureRecognizerDelegate`. Add this e
 
 ```swift 
 extension ViewController: UIGestureRecognizerDelegate {
-
-func handleTap() {
-
-self.textField.handleTap()
-}
+  func handleTap() {
+    self.textField.handleTap()
+  }
 }
 ```
 
 Finally, do not forget to remove observers :
 ```swift
-
 override func viewWillDisappear(animated: Bool) {
-NSNotificationCenter.defaultCenter().removeObserver(textField)
+  NSNotificationCenter.defaultCenter().removeObserver(textField)
 }
 ```
 
@@ -150,8 +147,8 @@ You can also add some snap-like buttons with a very simple target-action method 
 private let button = SNButton(frame: CGRect(x: 20, y: SNUtils.screenSize.height - 35, width: 33, height: 30), withImageNamed: "saveButton")
 
 button.setAction {
-[weak weakSelf = self] in
-// To do when the button is pressed
+  [weak weakSelf = self] in
+  // To do when the button is pressed
 }
 
 view.addSubview(button)

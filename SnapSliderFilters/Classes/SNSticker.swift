@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class SNSticker: UIImageView {
+open class SNSticker: UIImageView {
     
-    public init(frame: CGRect, image:UIImage, withContentMode mode: UIViewContentMode = .ScaleAspectFit, atZPosition zIndex:CGFloat? = nil) {
+    public init(frame: CGRect, image:UIImage, withContentMode mode: UIViewContentMode = .scaleAspectFit, atZPosition zIndex:CGFloat? = nil) {
         super.init(frame: frame)
         
         self.contentMode = mode
@@ -33,7 +33,7 @@ public class SNSticker: UIImageView {
 
 extension SNSticker: NSCopying {
     
-    public func copyWithZone(zone: NSZone) -> AnyObject {
+    public func copy(with zone: NSZone?) -> Any {
         let copy = SNSticker(frame: self.frame, image: (self.image)!, withContentMode: self.contentMode)
         return copy
     }

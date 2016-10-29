@@ -8,21 +8,21 @@
 
 import UIKit
 
-public class SNButton: UIButton {
+open class SNButton: UIButton {
     
     public typealias actionTypeClosure = () -> ()
-    private var action:actionTypeClosure = {}
+    fileprivate var action:actionTypeClosure = {}
     
-    private var shouldRunAction = false
-    private var _buttonState = ButtonAnimationState.smallButton
-    private var buttonState:ButtonAnimationState  {
+    fileprivate var shouldRunAction = false
+    fileprivate var _buttonState = ButtonAnimationState.smallButton
+    fileprivate var buttonState:ButtonAnimationState  {
         get {
             return _buttonState
         }
         set (newValue) {
             // The button is pressed : starting the animation to make it big
             if buttonState == .smallButton && newValue == .bigButton {
-                UIView.animateWithDuration(0.15,
+                UIView.animate(withDuration: 0.15,
                                            animations: {
                                             self.transform = ButtonAnimations.animationButtonPressed
                                             self._buttonState = .animating
@@ -35,7 +35,7 @@ public class SNButton: UIButton {
                                             }
                                                 // Button still pressed : bounce effect
                                             else {
-                                                UIView.animateWithDuration(0.09,
+                                                UIView.animate(withDuration: 0.09,
                                                     animations: {
                                                         self.transform = ButtonAnimations.animationButtonPressedSmallBounce
                                                     },
@@ -60,7 +60,7 @@ public class SNButton: UIButton {
                     shouldRunAction = false
                     self.action()
                 }
-                UIView.animateWithDuration(0.15,
+                UIView.animate(withDuration: 0.15,
                                            animations: {
                                             self.transform = ButtonAnimations.animationButtonReleased
                                             self._buttonState = .animating
@@ -77,13 +77,13 @@ public class SNButton: UIButton {
         }
     }
     
-    private struct ButtonAnimations {
-        static let animationButtonPressed = CGAffineTransformMakeScale(1.25, 1.25)
-        static let animationButtonPressedSmallBounce = CGAffineTransformMakeScale(1.13, 1.13)
-        static let animationButtonReleased = CGAffineTransformMakeScale(1, 1)
+    fileprivate struct ButtonAnimations {
+        static let animationButtonPressed = CGAffineTransform(scaleX: 1.25, y: 1.25)
+        static let animationButtonPressedSmallBounce = CGAffineTransform(scaleX: 1.13, y: 1.13)
+        static let animationButtonReleased = CGAffineTransform(scaleX: 1, y: 1)
     }
     
-    private enum ButtonAnimationState {
+    fileprivate enum ButtonAnimationState {
         case animating      // If the animation is running
         case smallButton    // If the button is/is wanted small
         case bigButton      // If the button is/is wanted big
@@ -94,23 +94,23 @@ public class SNButton: UIButton {
         
         self.layer.zPosition = 1000
         self.adjustsImageWhenHighlighted = false
-        self.setImage(UIImage(named: name), forState: .Normal)
+        self.setImage(UIImage(named: name), for: UIControlState())
         self.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10)
         
-        self.addTarget(self, action: #selector(buttonTouchUpInside), forControlEvents: .TouchUpInside)
-        self.addTarget(self, action: #selector(buttonPressed), forControlEvents: .TouchDown)
-        self.addTarget(self, action: #selector(buttonPressed), forControlEvents: .TouchDragEnter)
-        self.addTarget(self, action: #selector(buttonPressed), forControlEvents: .TouchDragInside)
-        self.addTarget(self, action: #selector(buttonReleased), forControlEvents: .TouchDragExit)
-        self.addTarget(self, action: #selector(buttonReleased), forControlEvents: .TouchCancel)
-        self.addTarget(self, action: #selector(buttonReleased), forControlEvents: .TouchDragOutside)
+        self.addTarget(self, action: #selector(buttonTouchUpInside), for: .touchUpInside)
+        self.addTarget(self, action: #selector(buttonPressed), for: .touchDown)
+        self.addTarget(self, action: #selector(buttonPressed), for: .touchDragEnter)
+        self.addTarget(self, action: #selector(buttonPressed), for: .touchDragInside)
+        self.addTarget(self, action: #selector(buttonReleased), for: .touchDragExit)
+        self.addTarget(self, action: #selector(buttonReleased), for: .touchCancel)
+        self.addTarget(self, action: #selector(buttonReleased), for: .touchDragOutside)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func setAction(action actionClosure: actionTypeClosure) {
+    open func setAction(action actionClosure: @escaping actionTypeClosure) {
         self.action = actionClosure
     }
     

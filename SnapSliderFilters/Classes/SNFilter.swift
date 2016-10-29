@@ -8,42 +8,45 @@
 
 import UIKit
 
-public class SNFilter: UIImageView {
+open class SNFilter: UIImageView {
     
     // Full list of filters available here : https://developer.apple.com/library/tvos/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
-    public static let filterNameList = ["No Filter" , "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer", "CIPhotoEffectInstant", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal"]
-    public var name:String?
+    open static let filterNameList = ["No Filter" , "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer", "CIPhotoEffectInstant", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal"]
+    open var name:String?
     var stickers = [SNSticker]()
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    public init(frame: CGRect, withImage image:UIImage, withContentMode mode:UIViewContentMode = .ScaleAspectFill) {
+    public init(frame: CGRect, withImage image:UIImage, withContentMode mode:UIViewContentMode = .scaleAspectFill) {
         super.init(frame: frame)
         self.contentMode = mode
         self.clipsToBounds = true
         self.image = image
+        let maskLayer = CAShapeLayer()
+        self.layer.mask = maskLayer
+        maskLayer.frame = CGRect(origin: CGPoint.zero, size: self.image!.size)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func mask(maskRect: CGRect) {
+    func mask(_ maskRect: CGRect) {
         let maskLayer = CAShapeLayer()
-        let path = CGPathCreateMutable()
-        CGPathAddRect(path, nil, maskRect)
+        let path = CGMutablePath()
+        path.addRect(maskRect)
         maskLayer.path = path
         self.layer.mask = maskLayer;
     }
     
-    func updateMask(maskRect: CGRect, newXPosition: CGFloat) {
+    func updateMask(_ maskRect: CGRect, newXPosition: CGFloat) {
         let maskLayer = CAShapeLayer()
-        let path = CGPathCreateMutable()
+        let path = CGMutablePath()
         var rect = maskRect
         rect.origin.x = newXPosition
-        CGPathAddRect(path, nil, rect)
+        path.addRect(rect)
         maskLayer.path = path
         self.layer.mask = maskLayer;
     }
@@ -77,10 +80,10 @@ public class SNFilter: UIImageView {
             let context = CIContext(options: nil)
             
             // 5 - output filtered image as cgImage with dimension.
-            let outputCGImage = context.createCGImage(myFilter!.outputImage!, fromRect: myFilter!.outputImage!.extent)
+            let outputCGImage = context.createCGImage(myFilter!.outputImage!, from: myFilter!.outputImage!.extent)
             
             // 6 - convert filtered CGImage to UIImage
-            let filteredImage = UIImage(CGImage: outputCGImage)
+            let filteredImage = UIImage(cgImage: outputCGImage!)
             
             // 7 - set filtered image to array
             filter.image = filteredImage
@@ -88,22 +91,21 @@ public class SNFilter: UIImageView {
         }
     }
     
-    public func addSticker(sticker: SNSticker) {
+    open func addSticker(_ sticker: SNSticker) {
         self.stickers.append(sticker)
     }
     
-    public static func generateFilters(originalImage: SNFilter, filters:[String]) -> [SNFilter] {
+    open static func generateFilters(_ originalImage: SNFilter, filters:[String]) -> [SNFilter] {
         
         var finalFilters = [SNFilter]()
         
-        let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
-        let qos_attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, 0)
-        let syncQueue = dispatch_queue_create("com.snapsliderfilters.app", qos_attr)
+        let queue = DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.high)
+        let syncQueue = DispatchQueue(label: "com.snapsliderfilters.app", attributes: .concurrent)
         
         // Each filter can be generated on a different thread
-        dispatch_apply(filters.count, queue) { iteration in
+        DispatchQueue.concurrentPerform(iterations: filters.count) { iteration in
             let filterComputed = originalImage.applyFilter(filterNamed: filters[iteration])
-            dispatch_sync(syncQueue) {
+            syncQueue.sync {
                 finalFilters.append(filterComputed)
                 return
             }
@@ -117,7 +119,7 @@ public class SNFilter: UIImageView {
 
 extension SNFilter: NSCopying {
     
-    public func copyWithZone(zone: NSZone) -> AnyObject {
+    public func copy(with zone: NSZone?) -> Any {
         let copy = SNFilter(frame: self.frame)
         copy.backgroundColor = self.backgroundColor
         copy.image = self.image
