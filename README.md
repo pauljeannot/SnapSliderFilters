@@ -28,8 +28,8 @@ This demo allows you to import your own image from the camera roll and to save t
 
 #### Platform
 
-- Swift 2
-- Xcode 7
+- Swift 3
+- Xcode 8
 - iOS 9
 
 #### Supported Device
