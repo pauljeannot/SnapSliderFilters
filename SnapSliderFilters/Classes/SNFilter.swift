@@ -120,11 +120,13 @@ open class SNFilter: UIImageView {
 extension SNFilter: NSCopying {
     
     public func copy(with zone: NSZone?) -> Any {
-        let copy = SNFilter(frame: self.frame)
+        guard
+            let image = image
+            else { fatalError("It seems that image is in fact mandatory") }
+        
+        let copy = SNFilter(frame: frame, withImage: image, withContentMode: contentMode)
         copy.backgroundColor = self.backgroundColor
-        copy.image = self.image
         copy.name = name
-        copy.contentMode = self.contentMode
         
         for s in stickers {
             copy.stickers.append(s.copy() as! SNSticker)
