@@ -51,6 +51,16 @@ open class SNFilter: UIImageView {
         self.layer.mask = maskLayer;
     }
     
+    func updateMask(_ maskRect: CGRect, newYPosition: CGFloat) {
+        let maskLayer = CAShapeLayer()
+        let path = CGMutablePath()
+        var rect = maskRect
+        rect.origin.y = newYPosition
+        path.addRect(rect)
+        maskLayer.path = path
+        self.layer.mask = maskLayer;
+    }
+    
     func applyFilter(filterNamed name:String) -> SNFilter {
         
         let filter:SNFilter = self.copy() as! SNFilter
