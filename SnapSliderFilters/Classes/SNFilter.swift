@@ -51,6 +51,16 @@ open class SNFilter: UIImageView {
         self.layer.mask = maskLayer;
     }
     
+    func updateMask(_ maskRect: CGRect, newYPosition: CGFloat) {
+        let maskLayer = CAShapeLayer()
+        let path = CGMutablePath()
+        var rect = maskRect
+        rect.origin.y = newYPosition
+        path.addRect(rect)
+        maskLayer.path = path
+        self.layer.mask = maskLayer;
+    }
+    
     func applyFilter(filterNamed name:String) -> SNFilter {
         
         let filter:SNFilter = self.copy() as! SNFilter
@@ -120,11 +130,13 @@ open class SNFilter: UIImageView {
 extension SNFilter: NSCopying {
     
     public func copy(with zone: NSZone?) -> Any {
-        let copy = SNFilter(frame: self.frame)
+        guard
+            let image = image
+            else { fatalError("It seems that image is in fact mandatory") }
+        
+        let copy = SNFilter(frame: frame, withImage: image, withContentMode: contentMode)
         copy.backgroundColor = self.backgroundColor
-        copy.image = self.image
         copy.name = name
-        copy.contentMode = self.contentMode
         
         for s in stickers {
             copy.stickers.append(s.copy() as! SNSticker)
