@@ -114,16 +114,16 @@ open class SNButton: UIButton {
         self.action = actionClosure
     }
     
-    func buttonTouchUpInside() {
+    @objc func buttonTouchUpInside() {
         shouldRunAction=true
         buttonReleased()
     }
     
-    func buttonPressed() {
+    @objc func buttonPressed() {
         buttonState = .bigButton
     }
     
-    func buttonReleased() {
+    @objc func buttonReleased() {
         buttonState = .smallButton
     }
 }
