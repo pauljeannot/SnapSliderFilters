@@ -88,7 +88,7 @@ extension SNTextField: UITextFieldDelegate {
     // Limit the text size to the screen width
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let text:NSString = (self.text! as NSString).replacingCharacters(in: range, with: string) as NSString
-        let contentWidth = text.size(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0)]).width
+        let contentWidth = text.size(withAttributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16.0)]).width
         return contentWidth <= (self.frame.width - 20)
     }
     
@@ -113,7 +113,7 @@ extension SNTextField: UIGestureRecognizerDelegate {
         }
     }
     
-    func handlePan(_ recognizer:UIPanGestureRecognizer) {
+    @objc func handlePan(_ recognizer:UIPanGestureRecognizer) {
         
         if self.isFirstResponder == true { return }
         
