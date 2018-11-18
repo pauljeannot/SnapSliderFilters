@@ -37,7 +37,7 @@ open class SNSlider: UIView {
         self.addSubview(self.slider)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    convenience public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
