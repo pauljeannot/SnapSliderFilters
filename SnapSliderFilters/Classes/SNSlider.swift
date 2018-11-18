@@ -17,7 +17,8 @@ open class SNSlider: UIView {
     fileprivate let slideAxis: SlideAxis
     
     open weak var dataSource:SNSliderDataSource?
-    
+    open weak var delegate:SNSliderDelegate?
+
     public init(frame: CGRect, slideAxis: SlideAxis = .horizontal) {
         
         self.slideAxis = slideAxis
@@ -37,7 +38,7 @@ open class SNSlider: UIView {
         self.addSubview(self.slider)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    convenience public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -146,6 +147,9 @@ extension SNSlider: UIScrollViewDelegate {
             self.slider.scrollRectToVisible(slideAxis.rect(at: 0, in: self),
                                             animated:false);
         }
+            delegate?.slider(self,
+                             didSlideAtIndex: Int(scrollView.contentOffset.x /
+                                slider.frame.width - 1))
         case .vertical:
             if (scrollView.contentOffset.y == slideAxis.positionOfPage(at: -1, in: self)) {
                 self.slider.scrollRectToVisible(slideAxis.rect(at: numberOfPages - 1, in: self),
@@ -155,6 +159,9 @@ extension SNSlider: UIScrollViewDelegate {
                 self.slider.scrollRectToVisible(slideAxis.rect(at: 0, in: self),
                                                 animated:false);
             }
+            delegate?.slider(self,
+                             didSlideAtIndex: Int(scrollView.contentOffset.y /
+                                slider.frame.height - 1))
         }
     }
 }

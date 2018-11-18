@@ -11,6 +11,7 @@
 		16B8ABD0532C88D8BE6E5E841792FDFA /* SnapSliderFilters-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E80757AEAF0620F282052314BC5156A /* SnapSliderFilters-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E1F8F54B94EE51186E79EC6A2B27E05 /* SNSliderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08965B8D111F2DC8C34B13965A98EE7 /* SNSliderDataSource.swift */; };
 		39414DED5C8BB5D7F86B0F9F6DF8EAFC /* SNFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */; };
+		4ADC6D7B21A2194C001CD405 /* SNSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC6D7921A21865001CD405 /* SNSliderDelegate.swift */; };
 		5D7210CB97776B768C88851FB8929AF4 /* Pods-SnapSliderFilters_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D01F69FD6D41A3FE1F069BA8A419242 /* Pods-SnapSliderFilters_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F083A453778F3DED02F355919A5EACB /* Pods-SnapSliderFilters_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFB0A30FE8ECEFEBA2FA2FEE62B773 /* Pods-SnapSliderFilters_Example-dummy.m */; };
 		6800ADB1057EBF323064B3BEC2DAF4FA /* SNSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */; };
@@ -54,6 +55,7 @@
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46B77637576DD533CC836A1C8D9B6222 /* Pods-SnapSliderFilters_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapSliderFilters.xcconfig; sourceTree = "<group>"; };
+		4ADC6D7921A21865001CD405 /* SNSliderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSliderDelegate.swift; sourceTree = "<group>"; };
 		52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNSlider.swift; sourceTree = "<group>"; };
 		544C6CB47B48E9598CE2B936A5A45926 /* Pods-SnapSliderFilters_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNFilter.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */,
 				52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */,
 				C08965B8D111F2DC8C34B13965A98EE7 /* SNSliderDataSource.swift */,
+				4ADC6D7921A21865001CD405 /* SNSliderDelegate.swift */,
 				8E11E37E752062D581B439C0607DDAB8 /* SNSticker.swift */,
 				37B12E1D1F65F6EB6239F12E91919137 /* SNTextField.swift */,
 				AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */,
@@ -340,16 +343,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					1F3FDF782886F3896275161381892DE5 = {
 						LastSwiftMigration = 0800;
 					};
 					5156FAF0B2ACFD7E48AB85EF47AA8ADD = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 					};
 					7CC7E80C1B27CC4BA08C07AB237964B6 = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -377,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADC6D7B21A2194C001CD405 /* SNSliderDelegate.swift in Sources */,
 				E18CE723F7B6CD734F65AA4D54344A6D /* SnapSliderFilters-dummy.m in Sources */,
 				39414DED5C8BB5D7F86B0F9F6DF8EAFC /* SNFilter.swift in Sources */,
 				6800ADB1057EBF323064B3BEC2DAF4FA /* SNSlider.swift in Sources */,
@@ -431,18 +435,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -452,6 +468,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -461,7 +478,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 544C6CB47B48E9598CE2B936A5A45926 /* Pods-SnapSliderFilters_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -479,6 +498,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_SnapSliderFilters_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -493,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -507,11 +528,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapSliderFilters/SnapSliderFilters.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SnapSliderFilters;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -526,18 +549,31 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -561,7 +597,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46B77637576DD533CC836A1C8D9B6222 /* Pods-SnapSliderFilters_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -579,6 +617,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_SnapSliderFilters_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -594,6 +633,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E4DB8475C8819432A1C815283E4E52F /* Pods-SnapSliderFilters_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -611,6 +652,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_SnapSliderFilters_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -626,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -640,10 +683,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapSliderFilters/SnapSliderFilters.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SnapSliderFilters;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -654,6 +699,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3608A6482718ED15276C590A18AF5517 /* Pods-SnapSliderFilters_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -671,6 +718,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_SnapSliderFilters_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

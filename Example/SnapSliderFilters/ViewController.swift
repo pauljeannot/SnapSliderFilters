@@ -137,7 +137,7 @@ extension ViewController: SNSliderDataSource {
 
 extension ViewController: UIGestureRecognizerDelegate {
     
-    func handleTap() {
+    @objc func handleTap() {
         self.textField.handleTap()
     }
 }
