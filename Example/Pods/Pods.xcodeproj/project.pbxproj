@@ -11,6 +11,7 @@
 		16B8ABD0532C88D8BE6E5E841792FDFA /* SnapSliderFilters-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E80757AEAF0620F282052314BC5156A /* SnapSliderFilters-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E1F8F54B94EE51186E79EC6A2B27E05 /* SNSliderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08965B8D111F2DC8C34B13965A98EE7 /* SNSliderDataSource.swift */; };
 		39414DED5C8BB5D7F86B0F9F6DF8EAFC /* SNFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */; };
+		4ADC6D7B21A2194C001CD405 /* SNSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC6D7921A21865001CD405 /* SNSliderDelegate.swift */; };
 		5D7210CB97776B768C88851FB8929AF4 /* Pods-SnapSliderFilters_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D01F69FD6D41A3FE1F069BA8A419242 /* Pods-SnapSliderFilters_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F083A453778F3DED02F355919A5EACB /* Pods-SnapSliderFilters_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BFB0A30FE8ECEFEBA2FA2FEE62B773 /* Pods-SnapSliderFilters_Example-dummy.m */; };
 		6800ADB1057EBF323064B3BEC2DAF4FA /* SNSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */; };
@@ -54,6 +55,7 @@
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46B77637576DD533CC836A1C8D9B6222 /* Pods-SnapSliderFilters_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		47BD28D3C18896525208F13CDD7E43F1 /* SnapSliderFilters.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapSliderFilters.xcconfig; sourceTree = "<group>"; };
+		4ADC6D7921A21865001CD405 /* SNSliderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSliderDelegate.swift; sourceTree = "<group>"; };
 		52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNSlider.swift; sourceTree = "<group>"; };
 		544C6CB47B48E9598CE2B936A5A45926 /* Pods-SnapSliderFilters_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SnapSliderFilters_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SNFilter.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				5C01067FCBF6D750F29C877DC5D1631C /* SNFilter.swift */,
 				52AB3D18585E6ED3465F0E416CC048E9 /* SNSlider.swift */,
 				C08965B8D111F2DC8C34B13965A98EE7 /* SNSliderDataSource.swift */,
+				4ADC6D7921A21865001CD405 /* SNSliderDelegate.swift */,
 				8E11E37E752062D581B439C0607DDAB8 /* SNSticker.swift */,
 				37B12E1D1F65F6EB6239F12E91919137 /* SNTextField.swift */,
 				AF618D3DD0E78C121413D6A8AFAA232B /* SNUtils.swift */,
@@ -377,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADC6D7B21A2194C001CD405 /* SNSliderDelegate.swift in Sources */,
 				E18CE723F7B6CD734F65AA4D54344A6D /* SnapSliderFilters-dummy.m in Sources */,
 				39414DED5C8BB5D7F86B0F9F6DF8EAFC /* SNFilter.swift in Sources */,
 				6800ADB1057EBF323064B3BEC2DAF4FA /* SNSlider.swift in Sources */,
