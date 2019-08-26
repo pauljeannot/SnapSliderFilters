@@ -10,10 +10,10 @@ import UIKit
 
 open class SNUtils {
     
-    open static let screenSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+    public static let screenSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     
     // Allow you to take a screenshot of the screen
-    open static func screenShot(_ view: UIView?) -> UIImage? {
+    public static func screenShot(_ view: UIView?) -> UIImage? {
         guard let imageView = view else {
             return nil
         }

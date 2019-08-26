@@ -11,7 +11,7 @@ import UIKit
 open class SNFilter: UIImageView {
     
     // Full list of filters available here : https://developer.apple.com/library/tvos/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
-    open static let filterNameList = ["No Filter" , "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer", "CIPhotoEffectInstant", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal"]
+    public static let filterNameList = ["No Filter" , "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer", "CIPhotoEffectInstant", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectProcess", "CIPhotoEffectTonal"]
     open var name:String?
     var stickers = [SNSticker]()
     
@@ -19,7 +19,7 @@ open class SNFilter: UIImageView {
         super.init(frame: frame)
     }
     
-    public init(frame: CGRect, withImage image:UIImage, withContentMode mode:UIViewContentMode = .scaleAspectFill) {
+    public init(frame: CGRect, withImage image:UIImage, withContentMode mode:UIView.ContentMode = .scaleAspectFill) {
         super.init(frame: frame)
         self.contentMode = mode
         self.clipsToBounds = true
@@ -105,7 +105,7 @@ open class SNFilter: UIImageView {
         self.stickers.append(sticker)
     }
     
-    open static func generateFilters(_ originalImage: SNFilter, filters:[String]) -> [SNFilter] {
+    public static func generateFilters(_ originalImage: SNFilter, filters:[String]) -> [SNFilter] {
         
         var finalFilters = [SNFilter]()
         

@@ -26,12 +26,12 @@ open class SNTextField: UITextField {
         self.textColor = UIColor.white
         self.placeholder = ""
         self.font = UIFont.systemFont(ofSize: 16)
-        self.borderStyle = UITextBorderStyle.none
+        self.borderStyle = UITextField.BorderStyle.none
         self.autocorrectionType = UITextAutocorrectionType.no
         self.keyboardType = UIKeyboardType.default
         self.returnKeyType = UIReturnKeyType.done
-        self.clearButtonMode = UITextFieldViewMode.never;
-        self.contentVerticalAlignment = UIControlContentVerticalAlignment.center
+        self.clearButtonMode = UITextField.ViewMode.never;
+        self.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         self.textAlignment = .center
         self.contentHorizontalAlignment = .center
         self.delegate = self
@@ -88,7 +88,7 @@ extension SNTextField: UITextFieldDelegate {
     // Limit the text size to the screen width
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let text:NSString = (self.text! as NSString).replacingCharacters(in: range, with: string) as NSString
-        let contentWidth = text.size(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0)]).width
+        let contentWidth = text.size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16.0)]).width
         return contentWidth <= (self.frame.width - 20)
     }
     
@@ -113,7 +113,7 @@ extension SNTextField: UIGestureRecognizerDelegate {
         }
     }
     
-    func handlePan(_ recognizer:UIPanGestureRecognizer) {
+    @objc func handlePan(_ recognizer:UIPanGestureRecognizer) {
         
         if self.isFirstResponder == true { return }
         
@@ -152,7 +152,7 @@ public extension SNTextField {
     }
     
     func updatePosition(_ notification: Notification) {
-        if let keyboardSize = ((notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = ((notification as NSNotification).userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             self.frame.origin.y = self.heightOfScreen - keyboardSize.height - self.frame.size.height
         }
     }

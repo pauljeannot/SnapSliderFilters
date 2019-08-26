@@ -94,8 +94,8 @@ open class SNButton: UIButton {
         
         self.layer.zPosition = 1000
         self.adjustsImageWhenHighlighted = false
-        self.setImage(UIImage(named: name), for: UIControlState())
-        self.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10)
+        self.setImage(UIImage(named: name), for: UIControl.State())
+        self.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
         self.addTarget(self, action: #selector(buttonTouchUpInside), for: .touchUpInside)
         self.addTarget(self, action: #selector(buttonPressed), for: .touchDown)
@@ -114,16 +114,16 @@ open class SNButton: UIButton {
         self.action = actionClosure
     }
     
-    func buttonTouchUpInside() {
+    @objc func buttonTouchUpInside() {
         shouldRunAction=true
         buttonReleased()
     }
     
-    func buttonPressed() {
+    @objc func buttonPressed() {
         buttonState = .bigButton
     }
     
-    func buttonReleased() {
+    @objc func buttonReleased() {
         buttonState = .smallButton
     }
 }
