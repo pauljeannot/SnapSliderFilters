@@ -10,7 +10,7 @@ import UIKit
 
 open class SNSticker: UIImageView {
     
-    public init(frame: CGRect, image:UIImage, withContentMode mode: UIViewContentMode = .scaleAspectFit, atZPosition zIndex:CGFloat? = nil) {
+    public init(frame: CGRect, image:UIImage, withContentMode mode: UIView.ContentMode = .scaleAspectFit, atZPosition zIndex:CGFloat? = nil) {
         super.init(frame: frame)
         
         self.contentMode = mode
